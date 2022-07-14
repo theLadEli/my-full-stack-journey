@@ -92,3 +92,40 @@ console.log("Hello!")
 // This prints Hello! to console, so only the coder can see it
 ```
 The second line will be ignored when running this code.
+
+***
+
+## Functions
+How to create a function:
+```
+function functionsName() {
+  }```
+
+**Example:**
+```js
+function getMilk(){
+    alert("leaveHouse");
+    alert("moveRight");
+    alert("moveUp");
+    alert("moveUp");
+    alert("moverRight");
+    alert("buyMilk");
+}
+```
+Now, whenever i call the function `getMilk` it'd perform all the actions inside it (in our case, the six alerts).
+* Can use `console.log` instead of alert if you don't wanna keep closing popups when testing xD
+
+### How to create a function:
+1. First type `function` (we only do this when we're creating functions - not when we're calling them
+2. Give the function a name (the same rules as [naming variables](#naming-variables))
+3. Add parameters or keep the rounded brackets `()` empty
+4. Open curly brackets `{` and put the function's actions inside them and close the curly brackets `}`
+
+### How to call a function
+To call the function, we just do:
+```js
+getMilk();
+```
+In this case, as we never made any function parameters when making it, we just keep the rounded brackets empty
+
+
