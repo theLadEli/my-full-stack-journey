@@ -128,4 +128,34 @@ getMilk();
 ```
 In this case, as we never made any function parameters when making it, we just keep the rounded brackets empty
 
+### Creating Function Parameters
+```js
+function getMilk(bottles) {
+```
+To give the function some parameters, we first create the function as normal, but inside the rounded brackets we put the parameter name there. If there are multiple parameters, seperate them with a comma. Now, when we call the function we need to specify the parameters, in my case - number of bottles we want
+**Example:**
+```js
+function getMilk(bottles, price)
+```
 
+**Full Function with Parameters Example:**
+```js
+function getMilk(bottles) {
+console.log("leaveHouse");
+console.log("moveRight");
+console.log("moveRight");
+console.log("moveUp");
+console.log("moveRight");
+console.log("buy " + bottles + " bottles of milk")
+console.log("moveLeft");
+console.log("moveLeft");
+console.log("moveDown");
+console.log("moveLeft");
+console.log("enterHouse");
+}
+ 
+getMilk(2);
+```
+In the example, we called the function `getMilk` and gave it a parameter called `bottles`, so now when we call the function we need to specify the number of bottles.
+Inside the function we placed a list of actions to perform, notice how in one of them i included the value of the parameter - so it'd show whatever value we input when calling the function
+Now, after closing the function, we added the number of `bottles` we wanted, inside the rounded brackets
