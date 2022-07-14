@@ -81,6 +81,8 @@ alert(message + " " + name)
 ```
 This would give an alert that says `Hello Eli`
 
+***
+
 ## Commenting on JS
 on JS use two forward slashes (//) to comment something out.
 
