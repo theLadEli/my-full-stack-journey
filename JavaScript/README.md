@@ -1,3 +1,13 @@
+# JS Basics
+
+In this repo i'll have all my JS projects with any relevant documentation and some background documentation as well.
+
+In almost every folder you'll find a `.js` file containing the code of the final project, and a `.md` file (often called `ReadMe.md`), where i document what i was trying to achieve, how i did it, explain the process and any other relevant information.
+
+***
+
+This File just contains my notes on Basic JS!
+
 ## Data Types
 
 A String is a Data Type of words; `str`
