@@ -130,6 +130,35 @@ var addition = 7/3;
 console.log("The answer is " + Math.floor(addition) + "(rounded down to the nearest full number)")
 ```
 
+### Rounding to the Nearest Full Number
+To round a number with JS we use the `Math.round()` property. It rounds the number to the nearest full number.
+
+**Example:**
+```js
+var roundThisNumber = Math.pow(3.121592653589793236);
+console.log(roundThisNumber);
+This would return the number 3.
+```
+It can also round up, depending on whats the nearest full number.
+
+
+### Elevating by the Power of a Number
+To elevate by the power we use the `Math.pow(base, elevation)` property.
+You put the number you want to round in the `base` parameter, and "to the power of" in the `elevation` parameter.
+
+**Example 1:**
+```js
+console.log(Math.pow(13,2));
+```
+
+**Example 2:**
+```js
+var x = 13;
+var powerThisNumber = Math.pow(x, 2); 
+console.log(powerThisNumber);
+```
+This would give us `169`.
+
 ***
 
 ## Functions
