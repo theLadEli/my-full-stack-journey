@@ -26,5 +26,5 @@ var equasion = weight / Math.pow(height, 2);
 ```js
 var bmi = bmiCalculator(65, 1.8); 
 console.log(bmi)
-```᲼᲼
+```
 4.᲼ And here, outside the function, we firstly created a variable where we called the function, with the parameters set, then we print the variables to console.
