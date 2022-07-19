@@ -116,6 +116,19 @@ The second line will be ignored when running this code.
 
 <sub>* 5 goes into 7 once and there's 2 remainder.</sub>
 
+### Rounding Down
+The Math.floor property rounds a number down
+
+So if we have these few lines of code:
+```js
+var addition = 7/3;
+console.log("The answer is " + addition)
+```
+And we want the `addition` variable rounded down to the nearest full number, we'd do:
+```js
+var addition = 7/3;
+console.log("The answer is " + Math.floor(addition) + "(rounded down to the nearest full number)")
+```
 
 ## Functions
 How to create a function:
