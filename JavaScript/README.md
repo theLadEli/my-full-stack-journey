@@ -130,6 +130,8 @@ var addition = 7/3;
 console.log("The answer is " + Math.floor(addition) + "(rounded down to the nearest full number)")
 ```
 
+***
+
 ## Functions
 How to create a function:
 ```
