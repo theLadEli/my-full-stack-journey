@@ -4,9 +4,33 @@ In this repo i'll have all my JS projects with any relevant documentation and so
 
 In almost every folder you'll find a `.js` file containing the code of the final project, and a `.md` file (often called `ReadMe.md`), where i document what i was trying to achieve, how i did it, explain the process and any other relevant information.
 
-***
+This (specific) File just contains my notes on Basic JS!
 
-This File just contains my notes on Basic JS!
+## Table of Contents
+- [JS Basics](#js-basics)
+  * [Data Types](#data-types)
+  * [Variables:](#variables)
+    + [Naming Variables](#naming-variables)
+    + [Advanced Variables](#advanced-variables)
+    + [Calling the variable](#calling-the-variable)
+  * [Concatenation](#concatenation)
+  * [Commenting on JS](#commenting-on-js)
+  * [Working with Numbers](#working-with-numbers)
+    + [Bidmas](#bidmas)
+    + [Rounding Down](#rounding-down)
+    + [Rounding to the Nearest Full Number](#rounding-to-the-nearest-full-number)
+    + [Elevating by the Power of a Number](#elevating-by-the-power-of-a-number)
+  * [Functions](#functions)
+    + [How to create a function:](#how-to-create-a-function-)
+    + [How to call a function](#how-to-call-a-function)
+    + [Creating Function Parameters](#creating-function-parameters)
+  * [Comparators](#comparators)
+  * [Conditional Logic](#conditional-logic)
+    + [If Else](#if-else)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+***
 
 ## Data Types
 
