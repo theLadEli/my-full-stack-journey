@@ -207,9 +207,10 @@ This would give us `169`.
 
 ## Functions
 How to create a function:
-```
+```js
 function functionsName() {
-  }```
+  }
+```
 
 **Example:**
 ```js
