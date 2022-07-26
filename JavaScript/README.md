@@ -25,6 +25,7 @@ This (specific) File just contains my notes on Basic JS!
     + [How to call a function](#how-to-call-a-function)
     + [Creating Function Parameters](#creating-function-parameters)
   * [Comparators](#comparators)
+    + [Combining Comparators](#combining-comparators)
   * [Conditional Logic](#conditional-logic)
     + [If Else](#if-else)
 
