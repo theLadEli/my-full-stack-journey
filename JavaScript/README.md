@@ -260,4 +260,4 @@ if (track === "clear"){
     turnRight();
 }
 ```
-* We used three `=`'s to use the `if` only when exactly the same
+* We used three `=`'s so the if statement only applies when exactly the same (data type as well)
