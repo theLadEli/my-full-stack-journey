@@ -247,9 +247,9 @@ Now, after closing the function, we added the number of `bottles` we wanted, ins
 
 ***
 
-# Conditional Logic
+## Conditional Logic
 
-## If Else
+### If Else
 `If` + `Else` is a type of conditional logic - Conditional logic is basically controlling the flow of your code. An example of conditional logic would be, `If` the track is clear, then go straight ahead. But if not (`Else`), then turn right.
 
 **Example:**
