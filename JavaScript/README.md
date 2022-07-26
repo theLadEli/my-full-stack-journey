@@ -295,6 +295,7 @@ else {
 }
 ```
 
+
 ## Combining Comparators
 
 | Comparator | Usage |
@@ -302,6 +303,7 @@ else {
 | `&&` | And |
 | <code>&#124;&#124;</code> | Or |
 | `!` | Not |
+
 
 ***
 
