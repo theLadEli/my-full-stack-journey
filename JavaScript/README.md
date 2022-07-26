@@ -247,6 +247,21 @@ Now, after closing the function, we added the number of `bottles` we wanted, ins
 
 ***
 
+## Comparators
+
+| Comparator | Usage |
+|-----------|-----------|
+| `===` | Is equal to (including data types) |
+| `==` | Is equal to (not including data types) |
+| `!==` | Is not equal to |
+| `>` | Is greater than |
+| `<` | Is lesser than |
+| `>=` | Is greater or equal to |
+| `<=` | Is lesser or equal to |
+
+
+***
+
 ## Conditional Logic
 
 ### If Else
