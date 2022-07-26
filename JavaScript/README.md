@@ -244,3 +244,20 @@ getMilk(2);
 In the example, we called the function `getMilk` and gave it a parameter called `bottles`, so now when we call the function we need to specify the number of bottles.
 Inside the function we placed a list of actions to perform, notice how in one of them i included the value of the parameter - so it'd show whatever value we input when calling the function
 Now, after closing the function, we added the number of `bottles` we wanted, inside the rounded brackets
+
+***
+
+# Conditional Logic
+
+## If Else
+`If` + `Else` is a type of conditional logic - Conditional logic is basically controlling the flow of your code. An example of conditional logic would be, `If` the track is clear, then go straight ahead. But if not (`Else`), then turn right.
+
+**Example:**
+```js
+if (track === "clear"){
+    goStrait();
+} else {
+    turnRight();
+}
+```
+* We used three `=`'s to use the `if` only when exactly the same
