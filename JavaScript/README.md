@@ -29,7 +29,7 @@ This (specific) File just contains my notes on Basic JS!
   * [Conditional Logic](#conditional-logic)
     + [If Else](#if-else)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+<!-- <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small> -->
 
 ***
 
