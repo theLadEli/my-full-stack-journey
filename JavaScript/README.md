@@ -296,7 +296,7 @@ else {
 ```
 
 
-## Combining Comparators
+### Combining Comparators
 
 | Comparator | Usage |
 |-----------|-----------|
