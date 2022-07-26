@@ -282,7 +282,26 @@ Now, after closing the function, we added the number of `bottles` we wanted, ins
 | `<` | Is lesser than |
 | `>=` | Is greater or equal to |
 | `<=` | Is lesser or equal to |
+| Combining Comparators |
 
+**Example:**
+```js
+var age = prompt("How old are you?");
+if (age == 16) {
+    prompt("Awesome! Your the same age as me :)");
+}    
+else {
+    alert("Your age is " + age)
+}
+```
+
+## Combining Comparators
+
+| Comparator | Usage |
+|-----------|-----------|
+| `&&` | and |
+| <code>&#124;&#124;</code> | or |
+| `!` | Not |
 
 ***
 
