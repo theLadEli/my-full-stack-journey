@@ -13,6 +13,7 @@ This (specific) File just contains my notes on Basic JS!
     + [Naming Variables](#naming-variables)
     + [Advanced Variables](#advanced-variables)
     + [Calling the variable](#calling-the-variable)
+    + [Arrays](#arrays)
   * [Concatenation](#concatenation)
   * [Commenting on JS](#commenting-on-js)
   * [Working with Numbers](#working-with-numbers)
@@ -323,3 +324,18 @@ if (track === "clear"){
 }
 ```
 * We used three `=`'s so the if statement only applies when exactly the same (data type as well)
+
+***
+
+## Arrays
+Arrays can be used to put a collection of data into one variable, as until now we've only been putting one peace of data into a variable.
+```js
+var guestList = [David, James, Robert, John, Joseph, Andrew, Ryan, Brandon, Jason, Justin]
+```
+And now, if we'd want to call a name from the `guestList` variable, we'd do the name of the variable and the position number inside of square brackets.
+
+**Example:**
+```js
+guestList[3];
+```
+And that'd retrieve `Robert`, the third name from my list.
