@@ -21,4 +21,4 @@ You can inpect web pages to see the coding of the site and edit the **local vers
 * **DNS -** The *DNS* takes the *URL* and finds the correct *IP Address* to load
 * **HTML -** Hyper Text Markup Language, the structure of a website (text, images, buttons etc.)
 * **CSS -** Casscading Styles Sheets, the styling of the website (how the image appears, the size of the text, colour of the button etc.)
-* **JS -** Javascript, the functioning of the website (What appears when you click something, what should the contact form do etc.)
+* **JSsss-** Javascript, the functioning of the website (What appears when you click something, what should the contact form do etc.)
