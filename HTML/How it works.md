@@ -11,3 +11,11 @@ These are the three code languages usually used:
 * JS
 
 You can inpect web pages to see the coding of the site and edit the **local version** of the website. But refreshing the page will bring back the online and public version, obviously removing all your changes.
+
+***
+
+## Keywords/Notes:
+
+* **URL -** Uniform Resource Locator - Like an address for a website
+* **IP Address -** A bunch of numbers that identifies a device. A *URL* is usually used as a more catchy and more memorable replacer instead of an *IP Address*
+* **DNS -** The *DNS* takes the *URL* and finds the correct *IP Address* to load
