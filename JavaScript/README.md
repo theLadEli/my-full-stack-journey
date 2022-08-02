@@ -338,4 +338,4 @@ And now, if we'd want to call a name from the `guestList` variable, we'd do the 
 ```js
 guestList[3];
 ```
-And that'd retrieve `Robert`, the third name from my list.
+And that'd retrieve `John`, the name on position `3` from my list.
