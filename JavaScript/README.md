@@ -13,7 +13,11 @@ This (specific) File just contains my notes on Basic JS!
     + [Naming Variables](#naming-variables)
     + [Advanced Variables](#advanced-variables)
     + [Calling the variable](#calling-the-variable)
-    + [Arrays](#arrays)
+  * [Arrays](#arrays)
+    + [Creating an Array](#creating-an-array)
+    + [Calling the Array](#calling-the-array)
+    + [Getting the Length of the Array](#getting-the-length-of-the-array)
+    + [Check if the array includes something](#check-if-the-array-includes-something)
   * [Concatenation](#concatenation)
   * [Commenting on JS](#commenting-on-js)
   * [Working with Numbers](#working-with-numbers)
@@ -90,6 +94,45 @@ alert("My name is " + myName + ". Welcome to the site, " + yourName + "!");
 Here we first made the variable `myName` with the value `Eli`, than we made a variable `yourName` with the value of whatever the user inputs in the `prompt`.
 Now to call the variable we made an `alert`, added some text, called `myName`, added more text than called `yourName`.
 * Notice how a plus sign (+) is used between all data types in a string.
+
+***
+
+## Arrays
+Arrays can be used to put a collection of data into one variable, as until now we've only been putting one peace of data into a variable.
+
+### Creating an Array
+To create an array, it's just like creating any variable, only the value should be all the arrays content in square brackets, seperated by commas.
+```js
+var guestList = ["David", "James", "Robert", "John", "Joseph", "Andrew", "Ryan", "Brandon", "Jason", "Justin"]
+```
+
+### Calling the Array
+And now, if we'd want to call a name from the `guestList` variable, we'd do the name of the variable and the position number inside of square brackets.
+
+**Example:**
+```js
+guestList[3];
+```
+And that'd retrieve `John`, the name on position `3` from my list.
+* The reason `John` is position number 3 and not `Robert`, is because like we said before: Computers always start counting from zero. So the first name (`David`) is in position 0, second name (`James`) is position 1, and so on...
+
+### Getting the Length of the Array
+You can also do things like `guestList.length;` and this would count the names inside the array.
+
+### Check if the array includes something
+Using the `.includes` property, we can check if an array includes a specific item. The output of this function is boolean (True/False).
+
+So if i were to do:
+```js
+guestList.includes("David");
+```
+We would of course get `True`.
+
+But if i were to do:
+```js
+guestList.includes("Jack");
+```
+We'd get `False`.
 
 ***
 
@@ -327,15 +370,4 @@ if (track === "clear"){
 
 ***
 
-## Arrays
-Arrays can be used to put a collection of data into one variable, as until now we've only been putting one peace of data into a variable.
-```js
-var guestList = [David, James, Robert, John, Joseph, Andrew, Ryan, Brandon, Jason, Justin]
-```
-And now, if we'd want to call a name from the `guestList` variable, we'd do the name of the variable and the position number inside of square brackets.
 
-**Example:**
-```js
-guestList[3];
-```
-And that'd retrieve `John`, the name on position `3` from my list.
