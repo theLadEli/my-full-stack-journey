@@ -368,4 +368,22 @@ guestList.includes("Jack");
 ```
 We'd get `False`.
 
-***
+### Adding New Items on to an Array
+If you want to add an item to an array (without editing the actual array), you can use a property called `.push()`.
+
+```js
+guestList.push("Eli");
+```
+On a new line, type the varial name, and add `.push()` with the item you'd like to add inside the brackets.
+Now, my name `Eli` has been added to the `guestList` array.
+
+* The item will always be added at the end (after all other array items)
+
+### Removing Items from an Array
+To remove an item from an array, you can use the property called `.pop`
+
+```js
+guestList.pop();
+```
+Now, the last item on the `guestList` variable (`Eli` - which we just added), has been removed.
+
