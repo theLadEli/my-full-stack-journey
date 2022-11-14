@@ -392,7 +392,11 @@ Now, the last item on the `guestList` variable (`Eli` - which we just added), ha
 ## Loops
 Loops are used to easily perform repetitive tasks until the provided parameters are true.
 
-### Creating While Loops
+The two types of loops are `while` and `for` loops. 
+
+### While Loops
+While loops are used if you want to check for a state (like while a program is in a certain state, do this...).
+
 To create a while loop, use the `while` keyword and then give it parameters. Inside of it, you could put whatever peace of code you want to be performed until those parameters are true.
 
 ```js
@@ -405,7 +409,9 @@ while (count <= 100) {
 
 Now, count will continuously be added by one in value until it reaches 100.
 
-### Creating For Loops
+### For Loops
+For loops are used if you want to iterate something many times.
+
 For loops include the variable, parameters and change in value all in one. First you put in the variable to track, then you put in the value it should stop at. And lastly you put in the change in value each time.
 
 ```js
