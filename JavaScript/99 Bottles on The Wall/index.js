@@ -2,7 +2,7 @@ var bottles = 100;
 
 function lyrics() {
 
-    while (bottles  <= 100){
+    while (bottles  >= 0){
         
         bottles--;
         
