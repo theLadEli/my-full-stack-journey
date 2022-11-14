@@ -387,3 +387,20 @@ guestList.pop();
 ```
 Now, the last item on the `guestList` variable (`Eli` - which we just added), has been removed.
 
+***
+
+## Loops
+Loops are used to easily perform repetitive tasks until the provided parameters are true.
+
+### Creating While Loops
+To create a while loop, use the `while` keyword and then give it parameters. Inside of it, you could put whatever peace of code you want to be performed until those parameters are true.
+
+```js
+var count = 1;
+
+while (count <= 100) {
+  count++;
+}
+```
+
+Now, count will continuously be added by one in value until it reaches 100.
