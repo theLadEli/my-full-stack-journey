@@ -404,3 +404,11 @@ while (count <= 100) {
 ```
 
 Now, count will continuously be added by one in value until it reaches 100.
+
+### Creating For Loops
+For loops include the variable, parameters and change in value all in one. First you put in the variable to track, then you put in the value it should stop at. And lastly you put in the change in value each time.
+
+```
+for (var count = 1; count <= 100; count++){
+}
+```
