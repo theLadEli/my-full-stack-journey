@@ -9,7 +9,7 @@ This (specific) File just contains my notes on Basic JS!
 ## Table of Contents
 - [JS Basics](#js-basics)
   * [Data Types](#data-types)
-  * [Variables:](#variables)
+  * [Variables:](#variables-)
     + [Naming Variables](#naming-variables)
     + [Advanced Variables](#advanced-variables)
     + [Calling the variable](#calling-the-variable)
@@ -33,6 +33,11 @@ This (specific) File just contains my notes on Basic JS!
     + [Calling the Array](#calling-the-array)
     + [Getting the Length of the Array](#getting-the-length-of-the-array)
     + [Check if the array includes something](#check-if-the-array-includes-something)
+    + [Adding New Items on to an Array](#adding-new-items-on-to-an-array)
+    + [Removing Items from an Array](#removing-items-from-an-array)
+  * [Loops](#loops)
+    + [While Loops](#while-loops)
+    + [For Loops](#for-loops)
 
 <!-- <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small> -->
 
