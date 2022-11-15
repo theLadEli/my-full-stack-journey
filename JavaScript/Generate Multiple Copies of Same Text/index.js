@@ -12,3 +12,4 @@ function repeatNumbers(number,times){
 }
 
 repeatNumbers(90,20);
+// When calling the function add whatever number or even text you want to be repeated and edit the amount of times
