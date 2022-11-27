@@ -1,0 +1,49 @@
+* {
+    background-color: #393e46;
+    color: #4ecca3;
+    text-align: center;
+    padding: 1% 1%;
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 8rem;
+    text-shadow: 6px 0px 0px #232931;
+}
+
+h5 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 35px;
+    display: inline;
+}
+
+p {
+    font-family: 'Indie Flower', cursive;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#dice-game {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+/* The Two Players Columns */
+
+.row {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.dice {
+    text-align: center;
+    display: inline-block;  
+}
