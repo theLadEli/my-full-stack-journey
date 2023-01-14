@@ -1,7 +1,7 @@
 body {
     text-align: center;
     background-color: #f8f8f8;
-    padding: 40vh 35vw;
+    padding: 35vh 35vw;
 }
 
 h1 {
@@ -19,10 +19,48 @@ a {
     background-color: #f8f8f8;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
-    margin: 4vh 0;
+    margin: 4vh 0 2vh 0;
     padding: 8px 35px;
     -webkit-border-radius: 15px;
     border-radius: 15px;
     box-shadow: inset 10px 10px 35px rgba(0, 0, 0, 0.08), inset -10px -10px 35px rgba(255, 255, 255, 0.7);
 }
 
+.column {
+    float: left;
+  }
+
+  .row {
+    margin-bottom: 4vh;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.copy {
+    padding: 15px 55px;
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    color: #f8f8f8;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.refresh {
+    margin-left: 20px;
+    padding: 15px 55px;
+    background-color: f8f8f8;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    border: solid 2px black;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.fa {
+    margin-right: 10px;
+}

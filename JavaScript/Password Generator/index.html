@@ -8,8 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1>Password Generator</h1>
@@ -18,9 +18,20 @@
         <p contenteditable="true">Password</p>
     </div>
 
+    <div class="row">
+        <div class="column">
+            <button class="copy" onclick="copyToClipboard()"><i class="fa fa-clone" aria-hidden="true"></i> Copy</button>
+        </div>
+        <div class="column">
+            <button class="refresh" onclick="location.reload();"><i class="fa fa-solid fa-arrows-rotate"></i> Refresh</button>
+        </div>
+      </div>
+
     <footer>
         <a href="https://github.com/theLadEli/">www.github.com/theLadEli</a>
     </footer>
+
+    <script src="https://kit.fontawesome.com/638298b2c7.js" crossorigin="anonymous"></script>
 <script src="index.js"></script>
 </body>
 </html>
