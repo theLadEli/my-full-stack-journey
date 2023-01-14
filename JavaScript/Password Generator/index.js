@@ -29,4 +29,5 @@ function copyToClipboard() {
 
     // Copy the text inside the text field
     navigator.clipboard.writeText(strongPass);
+    alert("Copied to clipboard!")
 }

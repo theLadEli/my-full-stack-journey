@@ -48,6 +48,7 @@ a {
     color: #f8f8f8;
     border-radius: 15px;
     cursor: pointer;
+    float: left
 }
 
 .refresh {
