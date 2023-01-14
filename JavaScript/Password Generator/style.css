@@ -1,0 +1,28 @@
+body {
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 40vh 35vw;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+}
+
+a {
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-decoration: none;
+    color: rgb(124, 124, 124);
+}
+
+.password-box {
+    background-color: #f8f8f8;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    margin: 4vh 0;
+    padding: 8px 35px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    box-shadow: inset 10px 10px 35px rgba(0, 0, 0, 0.08), inset -10px -10px 35px rgba(255, 255, 255, 0.7);
+}
+
