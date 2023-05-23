@@ -26,3 +26,15 @@ You'll often hear of two things which are used interchangeably but in reality me
 1. **Tags**, this means the actual contents wrapper. So in the above example the tags would be `<h1></h1>`.
 2. **Elements**, this is the content as well as the tags. So, if you look at the example above, the element is the entire thing (`<h1>Hello World</h1>).
 
+# Indentation
+You'll often see two different formatting of HTML, the first one looks like this:
+```
+<li>List Item</li>
+```
+The second one is like this:
+```
+<li>
+    List Item
+</li>
+```
+There is absolutely **no difference** in the output, it's just a matter of the developers personal preference.
