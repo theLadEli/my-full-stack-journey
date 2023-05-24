@@ -38,3 +38,52 @@ The second one is like this:
 </li>
 ```
 There is absolutely **no difference** in the output, it's just a matter of the developers personal preference.
+
+# File Paths
+
+There are two different path types:
+ - Absolute File Paths
+ - Relative File Paths
+
+## Absolute File Paths
+An absolute file path is a path that starts from the very beggining (usually the `C:` drive) and then directs the user to the file location.
+
+It could look something like this:
+```
+C:/Project/Images/cat.png
+```
+
+You can be in whatever folder on the computer, and using an absolute file path you'll be able to get to where you want.
+
+## Relative File Paths
+A relative file path is a path relative only to the websites code location. So the starting point will be the `index.html` (or similar) and you'd be directing the computer to get from here, to the cat image like so:
+```
+Images/cat.png
+```
+
+In relative paths, as it's not starting from the very beginning of the computer, there are a few special characters that could make navigating easier:
+| Character | Usage | Description |
+| ----------- | ----------- | ----------- |
+| `..` | ../essay.docx | This symbol tells the computer to first go up a directory and then find the `essay.docx` file |
+| `.` | ./dog.png | This tells the computer that in the same file path, to find the `dog.png`. You could usually ignore the `./` and just target the file name of a file that's in the same directory |
+
+# Boilerplate Code
+On a letter you'd start off with a header containing the address, and then an introduction which you'll follow with the actual body of the letter, and lastly you'd finish with a signature or letter closing.
+
+This is very similar to HTML files, in HTML we have a boilerplate. A typical HTML boilerplate looks like this:
+```html
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+```
+Inside the `head` is kept all the important information of the website that is not shown to the user. This could me the character set, title, meta information and more.
+
+Inside the `body` is where you'll create the content for the website, this is what the user see's.
