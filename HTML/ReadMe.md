@@ -4,7 +4,7 @@ A web browser is just like an interpreters for code. It takes the code files, an
  - CSS
  - JavaScript
 
-Although you can't have a website with just HTML or CSS, HTML can be used as a standalone. Although, I wouldn't recomend not using any CSS, as it's a few decades behind 😅
+Although you can't have a website with just HTML or CSS, HTML can be used as a standalone. Although, I wouldn't recommend not using any CSS, as it's a few decades behind 😅
 
 # Why is it called HTML
 HTML is an acronym for **H**yper**T**ext **M**arkup **L**anguage. HyperText refers to the peaces of text that links to other documents on the website, hyperlinked text, hypertext for short.
@@ -46,7 +46,7 @@ There are two different path types:
  - Relative File Paths
 
 ## Absolute File Paths
-An absolute file path is a path that starts from the very beggining (usually the `C:` drive) and then directs the user to the file location.
+An absolute file path is a path that starts from the very beginning (usually the `C:` drive) and then directs the user to the file location.
 
 It could look something like this:
 ```
