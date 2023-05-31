@@ -18,6 +18,7 @@ Python is extremely versatile, it could be used for the backend of a webapp, for
         - [Accessing a List](#accessing-a-list)
         - [Editing List Items](#editing-list-items)
         - [Manipulating list items:](#manipulating-list-items)
+      - [Tuple](#tuple)
   - [Working with Data Types](#working-with-data-types)
     - [The Different Data Types](#the-different-data-types)
     - [F Strings](#f-strings)
@@ -75,6 +76,7 @@ When naming a variable there are a few guidelines that are recommended to stick 
 Collections is a way to store and organise lots of pieces of data. There are a few different types of collections:
 
 #### Queue
+ * Coming Soon *
 
 #### Lists
 A list is an ordered sequence of values.
@@ -121,6 +123,16 @@ There are various different ways you can manipulate a list:
 | Min          | min_value = min(names)          | Returns the minimum value from the list.                                                           |
 | Max          | max_value = max(names)          | Returns the maximum value from the list.                                                           |
 
+#### Tuple
+A Tuple is a lot like a list, but they are immutable. This means once a tuple is created, you can not modify any of its items.
+
+To create a tuple, it's the same as `lists`, only with round brackets instead of square.
+
+**Example:**
+```py
+names = ("Alice", "Bob", "Charlie", "David", "Eli")
+```
+Now this tuple is fixed and can not be modified at a later point.
 
 ## Working with Data Types
 
