@@ -1,5 +1,5 @@
 # Python
-Python is extremely versatile, ti could be used for the backend of a webapp, for data science and much more!
+Python is extremely versatile, it could be used for the backend of a webapp, for data science and much more!
 
 ## Table of Contents:
 > 💡 **Note:** This may be out of date and have some broken links as this page is being continuously updated.- [Python](#python)
