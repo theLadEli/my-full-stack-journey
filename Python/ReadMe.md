@@ -19,6 +19,7 @@ Python is extremely versatile, it could be used for the backend of a webapp, for
         - [Editing List Items](#editing-list-items)
         - [Manipulating list items:](#manipulating-list-items)
       - [Tuple](#tuple)
+      - [Sets](#sets)
   - [Working with Data Types](#working-with-data-types)
     - [The Different Data Types](#the-different-data-types)
     - [F Strings](#f-strings)
@@ -133,6 +134,29 @@ To create a tuple, it's the same as `lists`, only with round brackets instead of
 names = ("Alice", "Bob", "Charlie", "David", "Eli")
 ```
 Now this tuple is fixed and can not be modified at a later point.
+
+#### Sets
+Set is an unordered collection of unique elements.
+ - Sets do not allow duplicate elements, adding a duplicate will not have any affect
+ - As sets are unordered, each time you print it, it will have a different order. This means you can not target a specific item index
+
+Creating a set is like the other list types, just with curly brackets:
+```py
+names = {"Alice", "Bob", "Charlie", "David", "Eli"}
+```
+
+If you were to add a duplicate to the list, it will only output one. An example is below.
+**Input:**
+```py
+names = {"Alice", "Bob", "Charlie", "David", "David", "Eli"}#
+print(names)
+```
+**Output**
+```py
+{'David', 'Charlie', 'Eli', 'Bob', 'Alice'}
+```
+As you can see, it only output David once. You also might have noticed the change in order, this is because sets do not have an order.
+
 
 ## Working with Data Types
 
