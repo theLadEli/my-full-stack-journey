@@ -1,6 +1,29 @@
 # Python
 Python is extremely versatile, ti could be used for the backend of a webapp, for data science and much more!
 
+Here are the contents, note that this may be out of date and have some broken links as this page is being continuously updated.
+- [Python](#python)
+  - [Python Basics](#python-basics)
+    - [Expressions](#expressions)
+    - [Variables](#variables)
+    - [Indentation](#indentation)
+  - [Working with Data Types](#working-with-data-types)
+    - [The Different Data Types](#the-different-data-types)
+    - [Checking Value Types](#checking-value-types)
+    - [Converting Values](#converting-values)
+  - [Python Input \& Output](#python-input--output)
+    - [Logging](#logging)
+    - [Input](#input)
+  - [Decision Structures and Iterations](#decision-structures-and-iterations)
+    - [Assignment and Comparison](#assignment-and-comparison)
+    - [If Statements](#if-statements)
+    - [Loops](#loops)
+      - [For Loops](#for-loops)
+      - [While Loops](#while-loops)
+  - [Python Modules](#python-modules)
+    - [Random Number Generator](#random-number-generator)
+
+
 ## Python Basics
 
 ### Expressions
@@ -74,7 +97,7 @@ A user input is always received as a string input, even if you just input a numb
 
 To convert from an integer to a string, check out this section [#converting-values](here)
 
-## Control Flow in Python
+## Decision Structures and Iterations
 
 ### Assignment and Comparison
 There is a difference between using `==` and `=`. They have different functionality and usecases.
