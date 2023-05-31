@@ -44,6 +44,8 @@ name = input("Please enter your name:")
 
 A user input is always received as a string input, even if you just input a number. This means if you're checking if the input is the value of a number, you'll get false. As the number is an integer, and the input is a string.
 
+To convert from an integer to a string, check out this section [#converting-values](here)
+
 ### Indentation
 In Python indentation is necessary. For example, if I had an if statement like this:
 ```py
@@ -70,3 +72,16 @@ else:
     print("Wrong")
 ```
 
+### Converting Values
+If I wanted to convert a string to an integer, I could do the following:
+```py
+user_guess = input("Enter your guess:")
+user_guess = int(user_guess)
+```
+
+### Checking Value Types
+To check the type of a value, you can use the `type` function.
+**Example:**
+```py
+print(type(user_guess))
+```
