@@ -8,6 +8,8 @@ Python is extremely versatile, it could be used for the backend of a webapp, for
   - [Python Basics](#python-basics)
     - [Expressions](#expressions)
     - [Variables](#variables)
+      - [Creating a Variable](#creating-a-variable)
+      - [Naming a Variable](#naming-a-variable)
     - [Indentation](#indentation)
   - [Working with Data Types](#working-with-data-types)
     - [The Different Data Types](#the-different-data-types)
@@ -32,12 +34,24 @@ Python is extremely versatile, it could be used for the backend of a webapp, for
 Expressions are combinations of values, variables and operators that produce results. It can be calculations, comparisons or even functions.
 
 ### Variables
+When naming a variable there are a few guidelines that are recommended to stick to:
+ 1. **Descriptive Names -** A variable that accurately describes its purpose/functionality
+ 2. **Lowercase Letters -** For readability Python variables are typically written in all lowercase
+ 3. **Avoid Reserved Words -** There are some words (keywords) that are to be avoided in variable naming, as these have special meaning in the language
+ 4. **Keep it Concise -** It should be short to enhance readability
+ 5. **Snake Casing -** Use underscores to separate words (e.g. `my_variable`)
+ 6. **Start with a letter -** Variable names need to start with a letter (**A-Z**) or underscore (**_**)
+ 7. **Be Consistent -** Stick to consistent naming throughout your code to avoid confusion
+
+#### Creating a Variable
 In python a variable is defined simply by giving it a name and then a value.
 For example:
 ```py
 my_variable = 10
 ```
 Unlike JS, you don;'t need to make a decision on what type of variable you're using (like a var, const etc.). And unlike C# you don't need to decide what datatype it is, Python will automatically figure it out and it will not be locked in forever, you'd be able to change it later on.
+
+#### Naming a Variable
 
 ### Indentation
 In Python indentation is necessary. For example, if I had an if statement like this:
