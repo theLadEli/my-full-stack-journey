@@ -20,6 +20,12 @@ Python is extremely versatile, it could be used for the backend of a webapp, for
         - [Manipulating list items:](#manipulating-list-items)
       - [Tuple](#tuple)
       - [Sets](#sets)
+      - [Dictionaries](#dictionaries)
+        - [Defining Dictionaries:](#defining-dictionaries)
+        - [Accessing Values](#accessing-values)
+        - [Modifying Values](#modifying-values)
+        - [Adding Key-Value Pairs](#adding-key-value-pairs)
+        - [Deleting Key-Value Pairs](#deleting-key-value-pairs)
   - [Working with Data Types](#working-with-data-types)
     - [The Different Data Types](#the-different-data-types)
     - [F Strings](#f-strings)
@@ -157,6 +163,48 @@ print(names)
 ```
 As you can see, it only output David once. You also might have noticed the change in order, this is because sets do not have an order.
 
+#### Dictionaries
+Dictionaries are laid out pretty differently to lists. It is a collection of key-value pairs, so it gives names to each item in it.
+
+##### Defining Dictionaries:
+```py
+about_eli = {
+    'name': 'Eli',
+    'age': 16,
+    'city': 'London'
+}
+```
+The Keys are the names like `name`, `age` and `city`. The values are what comes after the name, like `Eli`, `17` and `London`.
+
+##### Accessing Values
+If I wanted to print my age, I could do this:
+```py
+print(about_eli['age'])
+```
+I could also save it as a variable like this:
+```py
+my_age = about_eli['age']
+```
+
+##### Modifying Values
+With doctinairies you are able to modify values. To do this, you first target the key you want to change, and then specify its new value.
+
+**Example:**
+```py
+about_eli['age'] = 17
+```
+
+##### Adding Key-Value Pairs
+If I wanted to add a new key value pair, I could do the following:
+```py
+about_eli['occupation'] = 'Web Developer'
+```
+
+##### Deleting Key-Value Pairs
+To remove a key-value, I could do the following:
+```py
+del about_eli['occupation']
+```
 
 ## Working with Data Types
 
