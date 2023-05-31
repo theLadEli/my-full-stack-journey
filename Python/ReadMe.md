@@ -1,8 +1,10 @@
 # Python
 Python is extremely versatile, ti could be used for the backend of a webapp, for data science and much more!
 
-Here are the contents, note that this may be out of date and have some broken links as this page is being continuously updated.
+## Table of Contents:
+> 💡 **Note:** This may be out of date and have some broken links as this page is being continuously updated.- [Python](#python)
 - [Python](#python)
+  - [Table of Contents:](#table-of-contents)
   - [Python Basics](#python-basics)
     - [Expressions](#expressions)
     - [Variables](#variables)
