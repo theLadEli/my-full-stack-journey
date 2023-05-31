@@ -15,4 +15,13 @@ while user_guess != correct_answer:
     elif user_guess < correct_answer:
         print("🛑 Too low!")
 
-print(f"🎉 Correct! It took you {attempt_count} times!")
+if attempt_count == 1:
+    print("🥳 Congrats! You've just been awarded the Jelly Bean Hall of Fame!")
+elif attempt_count <= 3:
+    print("🎉 Incredible! You are a jelly bean wizard")
+elif attempt_count <= 5:
+    print("😀 Very impressive!")
+elif attempt_count <= 10:
+    print("👍 Nicely done! I bet you can get an even better score though...")
+else:
+    print(f"That took you {attempt_count} times... No comment 🫤")

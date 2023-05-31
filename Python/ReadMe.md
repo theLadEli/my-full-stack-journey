@@ -13,6 +13,7 @@ Python is extremely versatile, it could be used for the backend of a webapp, for
     - [Indentation](#indentation)
   - [Working with Data Types](#working-with-data-types)
     - [The Different Data Types](#the-different-data-types)
+    - [F Strings](#f-strings)
     - [Checking Value Types](#checking-value-types)
     - [Converting Values](#converting-values)
   - [Python Input \& Output](#python-input--output)
@@ -76,6 +77,14 @@ There are many different data types in Python, listed below are the most common 
 | `set`     | `{1, 2, 3}` | Represents an unordered collection of unique elements. |
 | `None`    | `None`  | Represents the absence of a value or the null value. |
 
+### F Strings
+F strings are Python strings that let you inject Python strings inside it. To define an F string, you just put the letter `f` before the quotation marks, and then wrap any inject Python in curly brackets `{}`.
+
+**Example**
+```py
+print(f"This is a variable with a value of {my_variable} inside a string.")
+```
+
 ### Checking Value Types
 To check the type of a value, you can use the `type` function.
 **Example:**
@@ -131,6 +140,18 @@ if user_answer = correct_answer:
     print("Correct")
 else:
     print("Wrong")
+```
+
+You can also add extra conditions, for example:
+```py
+x = 5
+
+if x < 5:
+    print("x is less than 5")
+elif x == 5:
+    print("x is equal to 5")
+else:
+    print("x is greater than 5")
 ```
 
 ### Loops
