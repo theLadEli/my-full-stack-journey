@@ -580,6 +580,7 @@ correct_answer = random.randint(1,100)
 Now a random number between 1-100 will be generated. Both the parameters (or extremes as they're often referred to) will be included.
 
 ### Pickle
+> 👉 *To be Added*
 
 ## RegEx
 > &nbsp;
