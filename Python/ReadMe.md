@@ -56,6 +56,8 @@ Python is extremely versatile, it could be used for the backend of a webapp, for
     - [Advanced Parameters](#advanced-parameters)
       - [Args](#args)
       - [Kwargs](#kwargs)
+      - [Docstrings](#docstrings)
+    - [Variadic Functions](#variadic-functions)
   - [Python Modules](#python-modules)
     - [Random Number Generator](#random-number-generator)
     - [Pickle](#pickle)
@@ -102,7 +104,7 @@ When naming a variable there are a few guidelines that are recommended to stick 
 Collections is a way to store and organise lots of pieces of data. There are a few different types of collections:
 
 ### Queue
- * Coming Soon *
+> 👉 *To be Added*
 
 ### Lists
 A list is an ordered sequence of values.
@@ -367,10 +369,10 @@ while count < 10:
 ```
 
 ### With
-> *To be Added*
+> 👉 *To be Added*
 
 ### For
-> *To be Added*
+> 👉 *To be Added*
 
 ## Writing to Files
 Writing to files is a very useful feature, this way you can save users info locally. This could be high scores, settings and much more!
@@ -460,19 +462,24 @@ Hello Eli
 ```
 
 ### Returning Data
-> *To be Added*
+> 👉 *To be Added*
 
 
 ### Advanced Parameters
-> *To be Added*
+> 👉 *To be Added*
 
 #### Args
-> *To be Added*
+> 👉 *To be Added*
 
 #### Kwargs
-> *To be Added*
+> 👉 *To be Added*
 
+#### Docstrings
+> 👉 *To be Added*
 
+### Variadic Functions
+> 👉 *To be Added*
+ 
 ## Python Modules
 
 ### Random Number Generator
