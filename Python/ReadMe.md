@@ -27,6 +27,7 @@ Python is extremely versatile, it could be used for the backend of a webapp, for
       - [Modifying Values](#modifying-values)
       - [Adding Key-Value Pairs](#adding-key-value-pairs)
       - [Deleting Key-Value Pairs](#deleting-key-value-pairs)
+    - [Manipulating Collections](#manipulating-collections)
   - [Working with Data Types](#working-with-data-types)
     - [The Different Data Types](#the-different-data-types)
     - [F Strings](#f-strings)
@@ -228,6 +229,9 @@ To remove a key-value, I could do the following:
 ```py
 del about_eli['occupation']
 ```
+
+### Manipulating Collections
+
 
 ## Working with Data Types
 
