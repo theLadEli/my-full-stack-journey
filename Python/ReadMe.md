@@ -52,15 +52,17 @@ Python is extremely versatile, it could be used for the backend of a webapp, for
     - [Creating Functions](#creating-functions)
     - [Calling Functions](#calling-functions)
     - [Parameters](#parameters)
+      - [Creating a Parameter](#creating-a-parameter)
+      - [Default Parameters](#default-parameters)
+        - [Args](#args)
+        - [Kwargs](#kwargs)
     - [Returning Data](#returning-data)
-    - [Advanced Parameters](#advanced-parameters)
-      - [Args](#args)
-      - [Kwargs](#kwargs)
       - [Docstrings](#docstrings)
     - [Variadic Functions](#variadic-functions)
   - [Python Modules](#python-modules)
     - [Random Number Generator](#random-number-generator)
     - [Pickle](#pickle)
+  - [RegEx](#regex)
 
 
 ## Python Basics
@@ -447,7 +449,10 @@ my_function()
 ```
 
 ### Parameters
-Functions could have a parameter, these are like placeholders or variables that let you pass values into the function when it is called. So if we wanted to pass a name into the function we created, so it gives a custom greeting to a person, we can use a parameter like this:
+Functions could have a parameter, these are like placeholders or variables that let you pass values into the function when it is called.
+
+#### Creating a Parameter
+So if we wanted to pass a name into the function we created, so it gives a custom greeting to a person, we can use a parameter like this:
 ```py
 def my_function(name):
   print(f"Hello {name}")
@@ -461,18 +466,98 @@ and it'd `print` this:
 Hello Eli
 ```
 
+#### Default Parameters
+You can also assign parameters default values, for example:
+```py
+def greet(name, message="Hello"):
+  print(f"{message}, {name}!")
+```
+So when you call a function you could just specify the name, like this:
+```py
+greet("Eli")
+```
+And the output would be:
+```
+Hello, Eli!
+```
+
+You could also override the default parameter values, like this:
+```py
+greet("Jack")
+greet("Eli", "Hi")
+```
+The output would be:
+```
+Jack, Hello!
+Eli, Hi!
+```
+
+##### Args
+By using `args` in a function parameter you can accept any number of parameters, and it'll be stored as a tuple.
+To use `args` you just add an asterisk before the parameter name like this:
+```py
+def calculate_sum(*numbers):
+    total = sum(numbers)
+    return total
+
+print(calculate_sum(1, 2, 3))  # Output: 6
+print(calculate_sum(4, 5, 6, 7, 8))  # Output: 30
+```
+In the above snippet, the function `calculate_sum` will accept any number of arguments and store them in the `numbers` parameter as a tuple. We could then easily just sum all the `numbers` arguments.
+
+##### Kwargs
+Similar to `args`, using `kwargs` lets you accept any number of keyword arguments but instead of storing them as tuples it stores them as dictionaries.
+Here's an example:
+```py
+def user_info(**details):
+    for key, value in details.items():
+        print(f"{key}: {value}")
+
+user_info(name="Eli", age=16, city="London")
+```
+
+I'll break down the example line by line:
+```py
+def user_info(**details):
+```
+The above is the start of a function, and in the parameters instead of just a normal parameter we use a `kwarg`. So now we can input however many arguments we want as dictionaries, with key-values.
+
+```py
+    for key, value in details.items():
+```
+Next, I created a `for` each key and value in the `details` parameter
+
+```py
+        print(f"{key}: {value}")
+```
+Now to specify what happens to each key-value, I set it to `print` its values.
+
+```py
+user_info(name="Eli", age=16, city="London")
+```
+When calling the agreement I can now create however many dictionary key-values as I want. And using the functions `for each` it'll print every key-value.
+
 ### Returning Data
-> 👉 *To be Added*
+In functions, the `return` statement is used to specify the functions output.
+ - When a `return` statement is used, the function gets terminated. So any code after the `return` within the function is not executed
 
+So it'd work like this:
+```py
+def my_function(name):
+  return(f"Hello {name}")
+```
+Now, I can just print the function, and it'd print the functions value like this:
 
-### Advanced Parameters
-> 👉 *To be Added*
+**Input:**
+```py
+print(my_function("Eli"))
+```
+**Output:**
+```py
+Hello Eli
+```
+The benefit of using `return` rather then `print` as in the previous example, is you have the ability to capture the `return`, you can store it to a variable or use it as an input for other computations. But with a `print`, there is no way to capture the output and re-use it.
 
-#### Args
-> 👉 *To be Added*
-
-#### Kwargs
-> 👉 *To be Added*
 
 #### Docstrings
 > 👉 *To be Added*
@@ -495,3 +580,9 @@ correct_answer = random.randint(1,100)
 Now a random number between 1-100 will be generated. Both the parameters (or extremes as they're often referred to) will be included.
 
 ### Pickle
+
+## RegEx
+> &nbsp;
+> 📄 **Getting Started with Regex**
+> See the documentation of RegEx over [here](../Regex/ReadMe.md)
+> &nbsp;
