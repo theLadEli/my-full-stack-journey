@@ -1,5 +1,0 @@
-movies = {
-    'title': '',
-    'director': '',
-    'year': ''
-}

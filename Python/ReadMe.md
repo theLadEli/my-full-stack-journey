@@ -8,6 +8,7 @@ Python is extremely versatile, it could be used for the backend of a webapp, for
   - [Python Basics](#python-basics)
     - [Expressions](#expressions)
     - [Indentation](#indentation)
+    - [Scope](#scope)
   - [Variables](#variables)
     - [Creating a Variable](#creating-a-variable)
     - [Naming a Variable](#naming-a-variable)
@@ -41,11 +42,20 @@ Python is extremely versatile, it could be used for the backend of a webapp, for
       - [For Loops](#for-loops)
       - [While Loops](#while-loops)
     - [With](#with)
+    - [For](#for)
   - [Writing to Files](#writing-to-files)
     - [Specifying the File Path](#specifying-the-file-path)
     - [Opening the File](#opening-the-file)
     - [Writing to the File](#writing-to-the-file)
     - [Closing the File](#closing-the-file)
+  - [Functions](#functions)
+    - [Creating Functions](#creating-functions)
+    - [Calling Functions](#calling-functions)
+    - [Parameters](#parameters)
+    - [Returning Data](#returning-data)
+    - [Advanced Parameters](#advanced-parameters)
+      - [Args](#args)
+      - [Kwargs](#kwargs)
   - [Python Modules](#python-modules)
     - [Random Number Generator](#random-number-generator)
     - [Pickle](#pickle)
@@ -64,6 +74,8 @@ if 2 == 2:
 ```
 Only if the print is indented would it be included in the if statement.
 
+### Scope
+> *To be Added*
 
 ## Variables
 
@@ -355,8 +367,11 @@ while count < 10:
 ```
 
 ### With
-* To be Added *
-  
+> *To be Added*
+
+### For
+> *To be Added*
+
 ## Writing to Files
 Writing to files is a very useful feature, this way you can save users info locally. This could be high scores, settings and much more!
 
@@ -410,6 +425,53 @@ After you've written to the file, you'd want to close it. If you don't close it,
 ```py
 file.close()
 ```
+
+## Functions
+Functions are reusable blocks of code to perform a specific set of tasks.
+
+### Creating Functions
+To define a function you use the `def` keyword, to say you're defining a function. Then you give it a name.
+```py
+def my_function():
+  print("Hello!")
+```
+
+### Calling Functions
+Once a function is created you can call it as many times as is needed. This way instead of rewriting blocks of code, time and time again, you can just wrap it in a function and call it at a later time.
+
+So if we want to call the function we just created, we'd do this:
+```py
+my_function()
+```
+
+### Parameters
+Functions could have a parameter, these are like placeholders or variables that let you pass values into the function when it is called. So if we wanted to pass a name into the function we created, so it gives a custom greeting to a person, we can use a parameter like this:
+```py
+def my_function(name):
+  print(f"Hello {name}")
+```
+So now, if I want to call the function I'll do:
+```py
+print(my_function("Eli"))
+```
+and it'd `print` this:
+```
+Hello Eli
+```
+
+### Returning Data
+> *To be Added*
+
+
+### Advanced Parameters
+> *To be Added*
+
+#### Args
+> *To be Added*
+
+#### Kwargs
+> *To be Added*
+
 
 ## Python Modules
 
