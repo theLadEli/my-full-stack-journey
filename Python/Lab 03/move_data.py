@@ -1,0 +1,5 @@
+movies = {
+    'title': '',
+    'director': '',
+    'year': ''
+}

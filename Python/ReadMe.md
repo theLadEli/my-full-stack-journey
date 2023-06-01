@@ -2,30 +2,30 @@
 Python is extremely versatile, it could be used for the backend of a webapp, for data science and much more!
 
 ## Table of Contents:
-> 💡 **Note:** This may be out of date and have some broken links as this page is being continuously updated.- [Python](#python)
+> 💡 **Note:** This may be out of date and have some broken links as this page is being continuously updated.
 - [Python](#python)
   - [Table of Contents:](#table-of-contents)
   - [Python Basics](#python-basics)
     - [Expressions](#expressions)
     - [Indentation](#indentation)
-    - [Variables](#variables)
-      - [Creating a Variable](#creating-a-variable)
-      - [Naming a Variable](#naming-a-variable)
-    - [Collections](#collections)
-      - [Queue](#queue)
-      - [Lists](#lists)
-        - [Creating a List](#creating-a-list)
-        - [Accessing a List](#accessing-a-list)
-        - [Editing List Items](#editing-list-items)
-        - [Manipulating list items:](#manipulating-list-items)
-      - [Tuple](#tuple)
-      - [Sets](#sets)
-      - [Dictionaries](#dictionaries)
-        - [Defining Dictionaries:](#defining-dictionaries)
-        - [Accessing Values](#accessing-values)
-        - [Modifying Values](#modifying-values)
-        - [Adding Key-Value Pairs](#adding-key-value-pairs)
-        - [Deleting Key-Value Pairs](#deleting-key-value-pairs)
+  - [Variables](#variables)
+    - [Creating a Variable](#creating-a-variable)
+    - [Naming a Variable](#naming-a-variable)
+  - [Collections](#collections)
+    - [Queue](#queue)
+    - [Lists](#lists)
+      - [Creating a List](#creating-a-list)
+      - [Accessing a List](#accessing-a-list)
+      - [Editing List Items](#editing-list-items)
+      - [Manipulating list items:](#manipulating-list-items)
+    - [Tuple](#tuple)
+    - [Sets](#sets)
+    - [Dictionaries](#dictionaries)
+      - [Defining Dictionaries:](#defining-dictionaries)
+      - [Accessing Values](#accessing-values)
+      - [Modifying Values](#modifying-values)
+      - [Adding Key-Value Pairs](#adding-key-value-pairs)
+      - [Deleting Key-Value Pairs](#deleting-key-value-pairs)
   - [Working with Data Types](#working-with-data-types)
     - [The Different Data Types](#the-different-data-types)
     - [F Strings](#f-strings)
@@ -40,8 +40,15 @@ Python is extremely versatile, it could be used for the backend of a webapp, for
     - [Loops](#loops)
       - [For Loops](#for-loops)
       - [While Loops](#while-loops)
+    - [With](#with)
+  - [Writing to Files](#writing-to-files)
+    - [Specifying the File Path](#specifying-the-file-path)
+    - [Opening the File](#opening-the-file)
+    - [Writing to the File](#writing-to-the-file)
+    - [Closing the File](#closing-the-file)
   - [Python Modules](#python-modules)
     - [Random Number Generator](#random-number-generator)
+    - [Pickle](#pickle)
 
 
 ## Python Basics
@@ -58,9 +65,9 @@ if 2 == 2:
 Only if the print is indented would it be included in the if statement.
 
 
-### Variables
+## Variables
 
-#### Creating a Variable
+### Creating a Variable
 In python a variable is defined simply by giving it a name and then a value.
 For example:
 ```py
@@ -68,7 +75,7 @@ my_variable = 10
 ```
 Unlike JS, you don;'t need to make a decision on what type of variable you're using (like a var, const etc.). And unlike C# you don't need to decide what datatype it is, Python will automatically figure it out and it will not be locked in forever, you'd be able to change it later on.
 
-#### Naming a Variable
+### Naming a Variable
 When naming a variable there are a few guidelines that are recommended to stick to:
  1. **Descriptive Names -** A variable that accurately describes its purpose/functionality
  2. **Lowercase Letters -** For readability Python variables are typically written in all lowercase
@@ -79,18 +86,18 @@ When naming a variable there are a few guidelines that are recommended to stick 
  7. **Be Consistent -** Stick to consistent naming throughout your code to avoid confusion
 
 
-### Collections
+## Collections
 Collections is a way to store and organise lots of pieces of data. There are a few different types of collections:
 
-#### Queue
+### Queue
  * Coming Soon *
 
-#### Lists
+### Lists
 A list is an ordered sequence of values.
  - You are able to add, remove or edit items in the list after it's created.
  - You're able to have different data types in the list, so one item can be an integer, another a string etc.
 
-##### Creating a List
+#### Creating a List
 To create a list, first give it a name. Then when you give it a value, wrap it in square brackets and separate each list item with a comma.
 
 **Example:**
@@ -98,7 +105,7 @@ To create a list, first give it a name. Then when you give it a value, wrap it i
 names = ["Alice", "Bob", "Charlie", "David", "Eli"]
 ```
 
-##### Accessing a List
+#### Accessing a List
 To access an item of a list, you just target its index. Like this:
 ```py
 names[2]
@@ -108,7 +115,7 @@ And that would target `Charlie`. You can also do something with it, like print i
 print(names[2])
 ```
 
-##### Editing List Items
+#### Editing List Items
 To edit a list item, first you target it, and then you redefine its value.
 
 **Example:**
@@ -116,7 +123,7 @@ To edit a list item, first you target it, and then you redefine its value.
 names[2] = Chris
 ```
 
-##### Manipulating list items:
+#### Manipulating list items:
 There are various different ways you can manipulate a list:
 | Operation    | Example                           | Description                                                                                       |
 |--------------|-----------------------------------|---------------------------------------------------------------------------------------------------|
@@ -130,7 +137,7 @@ There are various different ways you can manipulate a list:
 | Min          | min_value = min(names)          | Returns the minimum value from the list.                                                           |
 | Max          | max_value = max(names)          | Returns the maximum value from the list.                                                           |
 
-#### Tuple
+### Tuple
 A Tuple is a lot like a list, but they are immutable. This means once a tuple is created, you can not modify any of its items.
 
 To create a tuple, it's the same as `lists`, only with round brackets instead of square.
@@ -141,7 +148,7 @@ names = ("Alice", "Bob", "Charlie", "David", "Eli")
 ```
 Now this tuple is fixed and can not be modified at a later point.
 
-#### Sets
+### Sets
 Set is an unordered collection of unique elements.
  - Sets do not allow duplicate elements, adding a duplicate will not have any affect
  - As sets are unordered, each time you print it, it will have a different order. This means you can not target a specific item index
@@ -163,10 +170,10 @@ print(names)
 ```
 As you can see, it only output David once. You also might have noticed the change in order, this is because sets do not have an order.
 
-#### Dictionaries
+### Dictionaries
 Dictionaries are laid out pretty differently to lists. It is a collection of key-value pairs, so it gives names to each item in it.
 
-##### Defining Dictionaries:
+#### Defining Dictionaries:
 ```py
 about_eli = {
     'name': 'Eli',
@@ -176,7 +183,7 @@ about_eli = {
 ```
 The Keys are the names like `name`, `age` and `city`. The values are what comes after the name, like `Eli`, `17` and `London`.
 
-##### Accessing Values
+#### Accessing Values
 If I wanted to print my age, I could do this:
 ```py
 print(about_eli['age'])
@@ -186,21 +193,21 @@ I could also save it as a variable like this:
 my_age = about_eli['age']
 ```
 
-##### Modifying Values
-With doctinairies you are able to modify values. To do this, you first target the key you want to change, and then specify its new value.
+#### Modifying Values
+With dictionaries you are able to modify values. To do this, you first target the key you want to change, and then specify its new value.
 
 **Example:**
 ```py
 about_eli['age'] = 17
 ```
 
-##### Adding Key-Value Pairs
+#### Adding Key-Value Pairs
 If I wanted to add a new key value pair, I could do the following:
 ```py
 about_eli['occupation'] = 'Web Developer'
 ```
 
-##### Deleting Key-Value Pairs
+#### Deleting Key-Value Pairs
 To remove a key-value, I could do the following:
 ```py
 del about_eli['occupation']
@@ -347,6 +354,63 @@ while count < 10:
         print("Count is now at 10!")
 ```
 
+### With
+* To be Added *
+  
+## Writing to Files
+Writing to files is a very useful feature, this way you can save users info locally. This could be high scores, settings and much more!
+
+### Specifying the File Path
+To create the file you want to write to, you first need to specify its path and then when you open it it'll be created **if it does not already exist**.
+
+**Example:**
+```py
+# Specifying the Path
+file_path = "path/to/file.txt"
+
+# Create the file for writing
+file = open(file_path, "w")
+file.close()
+```
+
+### Opening the File
+To open a file you use the `open()` function. There are many different modes you can open a file with, here they are:
+
+| Mode | Description                                           |
+|------|-------------------------------------------------------|
+| "w"  | Write mode. Creates a new file or overwrites an existing file.       |
+| "a"  | Append mode. Appends content to an existing file or creates a new file if it doesn't exist. |
+| "r"  | Read mode. Opens an existing file for reading. This is the default mode.    |
+| "x"  | Exclusive creation mode. Creates a new file but raises an error if the file already exists. |
+| "b"  | Binary mode. Used for binary files.                     |
+| "t"  | Text mode. Used for text files. This is the default mode. |
+
+So, if you want to open a file in read mode, you'd use `r` like so:
+```py
+file = open(file_path, "r")
+```
+In the above example, `file_path` is a variable we created at a previous point that contains the file path.
+
+You can also combine modes, like this:
+```py
+file = open(file_path, "wt")
+```
+So now it's opening in text mode and write mode, so it overwrites an existing file.
+
+### Writing to the File
+Now that we've opened the file with the specified mode and saved it to a variable called `file`, you can write to it by adding `.write()` after it.
+
+**Example:**
+```py
+file.write("Hello world!")
+```
+
+### Closing the File
+After you've written to the file, you'd want to close it. If you don't close it, the changes will not be written to the file until the entire program has been stopped. Which is not ideal and takes up unnecessary memory space. To do this, just add the below after you've written to the file:
+```py
+file.close()
+```
+
 ## Python Modules
 
 ### Random Number Generator
@@ -360,3 +424,5 @@ This offers many helpful functions, the one I'll be using is `random.randint` an
 correct_answer = random.randint(1,100)
 ```
 Now a random number between 1-100 will be generated. Both the parameters (or extremes as they're often referred to) will be included.
+
+### Pickle
