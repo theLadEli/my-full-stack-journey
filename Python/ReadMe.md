@@ -65,6 +65,7 @@ Python is extremely versatile, it could be used for the backend of a webapp, for
   - [Packages](#packages)
     - [Creating a Package](#creating-a-package)
     - [Importing a Package](#importing-a-package)
+  - [The `__name__` Variable](#the-__name__-variable)
     - [Random Number Generator](#random-number-generator)
     - [Pickle](#pickle)
   - [RegEx](#regex)
@@ -633,6 +634,9 @@ If you want, you can also only import specific packages from modules, like this:
 ```py
 from my_package import my_module_one, my_module_two
 ```
+
+## The `__name__` Variable
+> 👉 *To be Added*
 
 
 ### Random Number Generator
