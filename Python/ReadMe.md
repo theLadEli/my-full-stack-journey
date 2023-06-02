@@ -13,7 +13,6 @@ Python is extremely versatile, it could be used for the backend of a webapp, for
     - [Creating a Variable](#creating-a-variable)
     - [Naming a Variable](#naming-a-variable)
   - [Collections](#collections)
-    - [Queue](#queue)
     - [Lists](#lists)
       - [Creating a List](#creating-a-list)
       - [Accessing a List](#accessing-a-list)
@@ -43,7 +42,6 @@ Python is extremely versatile, it could be used for the backend of a webapp, for
       - [For Loops](#for-loops)
       - [While Loops](#while-loops)
     - [With](#with)
-    - [For](#for)
   - [Writing to Files](#writing-to-files)
     - [Specifying the File Path](#specifying-the-file-path)
     - [Opening the File](#opening-the-file)
@@ -54,13 +52,19 @@ Python is extremely versatile, it could be used for the backend of a webapp, for
     - [Calling Functions](#calling-functions)
     - [Parameters](#parameters)
       - [Creating a Parameter](#creating-a-parameter)
-      - [Default Parameters](#default-parameters)
+      - [Default Parameters / Variadic Functions](#default-parameters--variadic-functions)
         - [Args](#args)
         - [Kwargs](#kwargs)
     - [Returning Data](#returning-data)
       - [Docstrings](#docstrings)
-    - [Variadic Functions](#variadic-functions)
-  - [Python Modules](#python-modules)
+        - [How to create a Docstring](#how-to-create-a-docstring)
+- [Python Modules](#python-modules)
+  - [Why Use Modules?](#why-use-modules)
+  - [Creating a Module](#creating-a-module)
+  - [Importing a Module](#importing-a-module)
+  - [Packages](#packages)
+    - [Creating a Package](#creating-a-package)
+    - [Importing a Package](#importing-a-package)
     - [Random Number Generator](#random-number-generator)
     - [Pickle](#pickle)
   - [RegEx](#regex)
@@ -105,9 +109,6 @@ When naming a variable there are a few guidelines that are recommended to stick 
 
 ## Collections
 Collections is a way to store and organise lots of pieces of data. There are a few different types of collections:
-
-### Queue
-> 👉 *To be Added*
 
 ### Lists
 A list is an ordered sequence of values.
@@ -377,9 +378,6 @@ while count < 10:
 ### With
 > 👉 *To be Added*
 
-### For
-> 👉 *To be Added*
-
 ## Writing to Files
 Writing to files is a very useful feature, this way you can save users info locally. This could be high scores, settings and much more!
 
@@ -470,7 +468,7 @@ and it'd `print` this:
 Hello Eli
 ```
 
-#### Default Parameters
+#### Default Parameters / Variadic Functions
 You can also assign parameters default values, for example:
 ```py
 def greet(name, message="Hello"):
@@ -564,12 +562,78 @@ The benefit of using `return` rather then `print` as in the previous example, is
 
 
 #### Docstrings
-> 👉 *To be Added*
+Docstrings is a place to provide documentation of a function.
+ - It's placed as the first statement in the function.
+ - It provides information about the purpose, usage and behaviour of a function.
+ - Many IDE's offer built in support for Docstrings, this includes auto-completion, typing hints, usage examples when hovering over the function etc.
 
-### Variadic Functions
-> 👉 *To be Added*
- 
-## Python Modules
+##### How to create a Docstring
+Docstrings are wrapped in tipple quotes (""") and placed at the start of functions.
+
+Here's an example of how a Docstring should be structured:
+```py
+def add_numbers(a, b):
+    """
+    Adds two numbers and returns the result.
+    
+    Arguments:
+    a -- the first number (int or float)
+    b -- the second number (int or float)
+    
+    Returns:
+    The sum of the two numbers (int or float)
+    """
+    return a + b
+```
+In the above example, it's structured like this:
+ 1. First it has a brief one-line summary of what the function does
+ 2. Next, introduced with `Arguments`, it explains what each of the parameters are for
+ 3. Lastly it says what you should expect back from the function
+
+# Python Modules
+Modules is essentially just code someone has written that you're able to use.
+
+## Why Use Modules?
+Modules helps us achieve Modularity: Breaking code into smaller, independent and reusable parts.
+ - Simplicity
+ - Maintainability
+ - Reusability
+ - Scoping
+   - Named objects (variables / functions) won't cause conflicts between modules
+
+## Creating a Module
+Creating a module is very simple, you just paste your code into a seperate python file, for example something called `my_module.py`. And if you'd want to import the module, you'd just do:
+```py
+import my_module
+```
+
+## Importing a Module
+To access something inside the module, you use `.` notation. So if inside the `my_module.py` I have a function called `test_function()`, I'd use `my_module.test_function()`.
+
+I can also only import that specific function rather then the entire module, like this:
+```py
+from my_module import test_function, second_function
+```
+You can import how ever many objects as needed,, just by separating them with a comma.
+
+## Packages
+A package is just a group of modules.
+
+### Creating a Package
+To create a package, you just create a folder and put all your modules inside it. Inside that folder you'll also have to create a file called `__innit__.py`. You can leave it empty, it just tells the computer that this folder is a package.
+
+### Importing a Package
+To import a package, it's similar to modules, you just do:
+```py
+from my_package import *
+```
+In the above example `my_package` was the folder name, and `import *` makes it import everything.
+
+If you want, you can also only import specific packages from modules, like this:
+```py
+from my_package import my_module_one, my_module_two
+```
+
 
 ### Random Number Generator
 Python offers a random number generator module, but to use it you first have to import it. To do this, at the start of the file, add:
