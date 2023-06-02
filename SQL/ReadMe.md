@@ -30,10 +30,19 @@ SQL Stands for:
     - [SUM](#sum)
     - [AVG](#avg)
   - [Aggregate Functions](#aggregate-functions)
+  - [Group By](#group-by)
+  - [Aggregating](#aggregating)
+  - [Join](#join)
+  - [Limit](#limit)
+- [NoSQL Databases](#nosql-databases)
+  - [What are NoSQL Databases](#what-are-nosql-databases)
+  - [MongoDB](#mongodb)
 
 There are many different flavors of SQL, like mySQL, postgreSQL and Oracle. They're all very similar but the syntax can differ. The below will be written with mySQL in mind.
 
 I'll be using https://www.db-fiddle.com/ for this documentation.
+
+Unlike Python, `""` and `''` ase not interchangable. **When in doubt, use single quotes!**
 
 ## Relational Databases
 > 👉 *To be Added*
@@ -262,3 +271,27 @@ FROM product
 WHERE price = (SELECT MIN(price) FROM product);
 ```
 So I just put `SELECT MIN(price) FROM product` inside the `WHERE` action.
+
+## Group By
+Group By allows us to divide rows into groups based off something. So if we had a field of category
+> 👉 *To be Added*
+
+## Aggregating
+> 👉 *To be Added* 
+
+## Join
+(four types)
+> 👉 *To be Added* 
+
+## Limit
+> 👉 *To be Added* 
+
+# NoSQL Databases
+SQL databases are also known as relational database, they're the more traditional and most popular type of database. However in more recent years, a type of database referred to as NoSQL database has started to become a lot more popular.
+
+## What are NoSQL Databases
+A NoSQL database is essentially a database that stores data in any other way then the traditional model. It doesn't have a strict meaning, and is often thought to stand for **Not only SQL**, rather then none at all.
+
+## MongoDB
+https://www.youtube.com/watch?v=ofme2o29ngU&t=5s&ab_channel=WebDevSimplified
+mongodb.com/try/download/shell
