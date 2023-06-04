@@ -44,6 +44,8 @@ I'll be using https://www.db-fiddle.com/ for this documentation.
 
 Unlike Python, `""` and `''` ase not interchangable. **When in doubt, use single quotes!**
 
+Statements always end in `;`.
+
 ## Relational Databases
 > 👉 *To be Added*
 
