@@ -12,6 +12,15 @@ Python is extremely versatile, it could be used for the backend of a webapp, for
   - [Variables](#variables)
     - [Creating a Variable](#creating-a-variable)
     - [Naming a Variable](#naming-a-variable)
+  - [Operators](#operators)
+    - [Basic Operators](#basic-operators)
+    - [Assignment Operators](#assignment-operators)
+  - [Working with Data Types](#working-with-data-types)
+    - [The Different Data Types](#the-different-data-types)
+    - [F Strings](#f-strings)
+    - [Checking Value Types](#checking-value-types)
+    - [Converting Values](#converting-values)
+    - [Getting Data Type Options](#getting-data-type-options)
   - [Collections](#collections)
     - [Lists](#lists)
       - [Creating a List](#creating-a-list)
@@ -27,11 +36,6 @@ Python is extremely versatile, it could be used for the backend of a webapp, for
       - [Adding Key-Value Pairs](#adding-key-value-pairs)
       - [Deleting Key-Value Pairs](#deleting-key-value-pairs)
     - [Manipulating Collections](#manipulating-collections)
-  - [Working with Data Types](#working-with-data-types)
-    - [The Different Data Types](#the-different-data-types)
-    - [F Strings](#f-strings)
-    - [Checking Value Types](#checking-value-types)
-    - [Converting Values](#converting-values)
   - [Python Input \& Output](#python-input--output)
     - [Logging](#logging)
     - [Input](#input)
@@ -97,6 +101,19 @@ my_variable = 10
 ```
 Unlike JS, you don;'t need to make a decision on what type of variable you're using (like a var, const etc.). And unlike C# you don't need to decide what datatype it is, Python will automatically figure it out and it will not be locked in forever, you'd be able to change it later on.
 
+To create multi-line text variables, you wrap the text in tripple quotes:
+```py
+textBlock = """
+Lorem ipsum dolor sit amet consectetur, adipiscing elit elementum curae nisi, eleifend duis facilisi netus.
+
+Orci non magna consequat volutpat taciti libero himenaeos nascetur eros pulvinar, id ligula feugiat bibendum urna fermentum per morbi erat accumsan, leo ad cursus lacinia odio iaculis suspendisse nulla ac.
+
+Aptent fames habitasse convallis mus ut pretium ultricies primis eleifend rutrum curabitur, magnis et tortor condimentum fermentum diam tincidunt massa accumsan ligula, facilisi scelerisque dignissim himenaeos suscipit malesuada elementum nibh donec nunc.
+
+Justo gravida dis morbi nullam etiam convallis massa, molestie phasellus scelerisque cum lectus nam, sodales urna nunc torquent ullamcorper facilisis.
+"""
+```
+
 ### Naming a Variable
 When naming a variable there are a few guidelines that are recommended to stick to:
  1. **Descriptive Names -** A variable that accurately describes its purpose/functionality
@@ -107,6 +124,104 @@ When naming a variable there are a few guidelines that are recommended to stick 
  6. **Start with a letter -** Variable names need to start with a letter (**A-Z**) or underscore (**_**)
  7. **Be Consistent -** Stick to consistent naming throughout your code to avoid confusion
 
+## Operators
+You can use mathematical operators to perform calculations in Python. Below are some of the most common ones:
+
+### Basic Operators
+| Operator | Description                 | Example                       | Output    |
+|----------|-----------------------------|-------------------------------|-----------|
+| +        | Addition                    | 2 + 3                         | 5         |
+| -        | Subtraction                 | 5 - 3                         | 2         |
+| *        | Multiplication              | 2 * 3                         | 6         |
+| /        | Division                    | 6 / 3                         | 2.0       |
+| //       | Floor Division (divides and then rounds to the nearest whole number)              | 7 // 3                        | 2         |
+| %        | Modulo (Remainder)          | 7 % 3                         | 1         |
+| **       | Exponentiation (power by)             | 2 ** 3                        | 8         |
+| ==       | Equal to                    | 2 == 3                        | False     |
+| !=       | Not equal to                | 2 != 3                        | True      |
+| >        | Greater than                | 2 > 3                         | False     |
+| <        | Less than                   | 2 < 3                         | True      |
+| >=       | Greater than or equal to     | 2 >= 3                        | False     |
+| <=       | Less than or equal to        | 2 <= 3                        | True      |
+
+### Assignment Operators
+| Operator | Description              | Example                        | Output   |
+|----------|--------------------------|--------------------------------|----------|
+| +=       | Add and assign           | x += 2 (where x = 3)           | x = 5    |
+| -=       | Subtract and assign      | x -= 2 (where x = 3)           | x = 1    |
+| *=       | Multiply and assign      | x *= 2 (where x = 3)           | x = 6    |
+| /=       | Divide and assign        | x /= 2 (where x = 6)           | x = 3.0  |
+| //=      | Floor divide and assign  | x //= 2 (where x = 7)          | x = 3    |
+| %=       | Modulo and assign        | x %= 3 (where x = 7)           | x = 1    |
+| **=      | Exponentiate and assign  | x **= 2 (where x = 2)          | x = 4    |
+| and=     | Logical AND and assign   | x and= False (where x = True)  | x = False|
+| or=      | Logical OR and assign    | x or= True (where x = False)   | x = True |
+These assignment operators allow you to perform an operation and update the value of a variable in a single step, making your code more concise and readable.
+
+## Working with Data Types
+
+### The Different Data Types
+There are many different data types in Python, listed below are the most common ones along with what they do and examples of them:
+| Data Type | Example | Description |
+|-----------|---------|-------------|
+| `int`     | `42`    | Represents whole numbers (positive, negative, or zero) without decimal points. |
+| `float`   | `3.14`  | Represents numbers with decimal points or fractional parts. |
+| `str`     | `'Hello'` | Represents a sequence of characters, such as text. |
+| `bool`    | `True` or `False` | Represents a logical value of either true or false. |
+| `list`    | `[1, 2, 3]` | Represents an ordered collection of items, which can be of different types. |
+| `dict`    | `{'name': 'John', 'age': 25}` | Represents a collection of key-value pairs, also known as a dictionary. |
+| `set`     | `{1, 2, 3}` | Represents an unordered collection of unique elements. |
+| `None`    | `None`  | Represents the absence of a value or the null value. |
+
+### F Strings
+F strings are Python strings that let you inject Python strings inside it. To define an F string, you just put the letter `f` before the quotation marks, and then wrap any inject Python in curly brackets `{}`.
+
+**Example**
+```py
+print(f"This is a variable with a value of {my_variable} inside a string.")
+```
+
+### Checking Value Types
+To check the type of a value, you can use the `type` function.
+**Example:**
+```py
+print(type(user_guess))
+```
+
+### Converting Values
+If I wanted to convert a string to an integer, I could do the following:
+```py
+user_guess = input("Enter your guess:")
+user_guess = int(user_guess)
+```
+
+### Getting Data Type Options
+In Python you can use `dir()` to check all the available option with a data type.
+
+**Example Input:**
+```py
+myString = "Hello, my name is Eli"
+print(dir(myString))
+```
+
+**Example Output:**
+```
+['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isascii', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'removeprefix', 'removesuffix', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
+```
+All the above items that begin with `__` are built in operators that aren't  so relevant at the moment. But the ones without, like `upper`, `swapcase`, `replace` etc. are some way you can manipulate the data type.
+
+To use one of these operators, you follow the variable with `.operatername()`, obviously replacing `operatorname` with the name of the operator you want to use. Here's an example:
+
+**Input:**
+```py
+myString = "Hello, my name is Eli"
+print(myString.upper())
+```
+
+**Output:**
+```py
+HELLO, MY NAME IS ELI
+```
 
 ## Collections
 Collections is a way to store and organise lots of pieces of data. There are a few different types of collections:
@@ -234,43 +349,6 @@ del about_eli['occupation']
 
 ### Manipulating Collections
 
-
-## Working with Data Types
-
-### The Different Data Types
-There are many different data types in Python, listed below are the most common ones along with what they do and examples of them:
-| Data Type | Example | Description |
-|-----------|---------|-------------|
-| `int`     | `42`    | Represents whole numbers (positive, negative, or zero) without decimal points. |
-| `float`   | `3.14`  | Represents numbers with decimal points or fractional parts. |
-| `str`     | `'Hello'` | Represents a sequence of characters, such as text. |
-| `bool`    | `True` or `False` | Represents a logical value of either true or false. |
-| `list`    | `[1, 2, 3]` | Represents an ordered collection of items, which can be of different types. |
-| `dict`    | `{'name': 'John', 'age': 25}` | Represents a collection of key-value pairs, also known as a dictionary. |
-| `set`     | `{1, 2, 3}` | Represents an unordered collection of unique elements. |
-| `None`    | `None`  | Represents the absence of a value or the null value. |
-
-### F Strings
-F strings are Python strings that let you inject Python strings inside it. To define an F string, you just put the letter `f` before the quotation marks, and then wrap any inject Python in curly brackets `{}`.
-
-**Example**
-```py
-print(f"This is a variable with a value of {my_variable} inside a string.")
-```
-
-### Checking Value Types
-To check the type of a value, you can use the `type` function.
-**Example:**
-```py
-print(type(user_guess))
-```
-
-### Converting Values
-If I wanted to convert a string to an integer, I could do the following:
-```py
-user_guess = input("Enter your guess:")
-user_guess = int(user_guess)
-```
 
 ## Python Input & Output
 
