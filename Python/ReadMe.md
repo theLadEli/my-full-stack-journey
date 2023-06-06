@@ -14,6 +14,7 @@ Python is extremely versatile, it could be used for the backend of a webapp, for
     - [Naming a Variable](#naming-a-variable)
   - [Operators](#operators)
     - [Basic Operators](#basic-operators)
+    - [Logical Operators](#logical-operators)
     - [Assignment Operators](#assignment-operators)
   - [Working with Data Types](#working-with-data-types)
     - [The Different Data Types](#the-different-data-types)
@@ -70,9 +71,10 @@ Python is extremely versatile, it could be used for the backend of a webapp, for
     - [Creating a Package](#creating-a-package)
     - [Importing a Package](#importing-a-package)
   - [The `__name__` Variable](#the-__name__-variable)
-    - [Random Number Generator](#random-number-generator)
+    - [Random Number](#random-number)
     - [Pickle](#pickle)
   - [RegEx](#regex)
+- [Machine Learning](#machine-learning)
 
 
 ## Python Basics
@@ -100,6 +102,8 @@ For example:
 my_variable = 10
 ```
 Unlike JS, you don;'t need to make a decision on what type of variable you're using (like a var, const etc.). And unlike C# you don't need to decide what datatype it is, Python will automatically figure it out and it will not be locked in forever, you'd be able to change it later on.
+
+**Variable names are case sensitive.**
 
 To create multi-line text variables, you wrap the text in tripple quotes:
 ```py
@@ -143,6 +147,14 @@ You can use mathematical operators to perform calculations in Python. Below are 
 | <        | Less than                   | 2 < 3                         | True      |
 | >=       | Greater than or equal to     | 2 >= 3                        | False     |
 | <=       | Less than or equal to        | 2 <= 3                        | True      |
+
+### Logical Operators
+| Operator | Description                    | Example            | Output |
+|----------|--------------------------------|--------------------|--------|
+| and      | Logical AND operator           | True and False     | False  |
+| or       | Logical OR operator            | True or False      | True   |
+| not      | Logical NOT operator           | not True           | False  |
+Logical operators can be used for example to see if something equals something `or` something else. 
 
 ### Assignment Operators
 | Operator | Description              | Example                        | Output   |
@@ -371,7 +383,8 @@ name = input("Please enter your name:")
 
 A user input is always received as a string input, even if you just input a number. This means if you're checking if the input is the value of a number, you'll get false. As the number is an integer, and the input is a string.
 
-To convert from an integer to a string, check out this section [#converting-values](here)
+To convert from an integer to a string, check out this section [here](#converting-values)
+
 
 ## Decision Structures and Iterations
 
@@ -717,7 +730,7 @@ from my_package import my_module_one, my_module_two
 > 👉 *To be Added*
 
 
-### Random Number Generator
+### Random Number
 Python offers a random number generator module, but to use it you first have to import it. To do this, at the start of the file, add:
 ```py
 import random
@@ -737,3 +750,8 @@ Now a random number between 1-100 will be generated. Both the parameters (or ext
 > 📄 **Getting Started with Regex**
 > See the documentation of RegEx over [here](../Regex/ReadMe.md)
 > &nbsp;
+
+# Machine Learning
+A machine learning program can be used for various methods, an example being a spam filter that learns your preferences over time and improves its decision based on what is and isn't spam. Many websites like Netflix use machine learning to see what content you watch and suggest others that you'll like based on data that they've collected from you.
+
+SKit Learn
