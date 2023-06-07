@@ -8,10 +8,15 @@ Check a PIN number is correct.
 correctPin = 1234
 secondCorrectPin = 4321
 
-userInput = input("Input your pin: ")
-userInput = int(userInput)
 
-if userInput == correctPin or userInput == secondCorrectPin:
-    print("🎉 Welcome!")
-else:
-    print("🛑 Incorrect, you've been locked out of the system.")
+loggedIn = False
+
+while loggedIn == False:
+    userInput = input("Input your pin: ")
+    userInput = int(userInput)
+    
+    if userInput == correctPin or userInput == secondCorrectPin:
+        print("🎉 Welcome!")
+        loggedIn = True
+    else:
+        print("🛑 Incorrect, you've been locked out of the system.")
