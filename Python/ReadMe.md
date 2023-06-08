@@ -18,7 +18,12 @@ Python is extremely versatile, it could be used for the backend of a webapp, for
     - [Assignment Operators](#assignment-operators)
   - [Working with Data Types](#working-with-data-types)
     - [The Different Data Types](#the-different-data-types)
-    - [F Strings](#f-strings)
+    - [Strings](#strings)
+      - [String Formatting](#string-formatting)
+      - [Index Positions](#index-positions)
+      - [F Strings](#f-strings)
+      - [Slicing Strings](#slicing-strings)
+    - [Multiplying Strings](#multiplying-strings)
     - [Checking Value Types](#checking-value-types)
     - [Converting Values](#converting-values)
     - [Getting Data Type Options](#getting-data-type-options)
@@ -185,12 +190,83 @@ There are many different data types in Python, listed below are the most common 
 | `set`     | `{1, 2, 3}` | Represents an unordered collection of unique elements. |
 | `None`    | `None`  | Represents the absence of a value or the null value. |
 
-### F Strings
+### Strings
+ - To make a string in python, you surround the text with double or single quotes.
+ - To make a multiline string, you surround the text with triple quotes
+
+#### String Formatting
+Like most languages, to make a new line, you use `\n`.
+To add a tab (indent), you use `\t`.
+For characters not available on the keyboard, you may need to use the unicode value.
+
+#### Index Positions
+Each character in a string has an index, like in arrays. The index of the first character is `0`, the last  character is `-1`.
+
+**Example Input:**
+```py
+stringIndex = 'Hello, my name is Eli'
+
+print(stringIndex[0], stringIndex[1], stringIndex[-1])
+```
+
+***Example Output:**
+```py
+H e i
+```
+
+Here's the different outputs:
+ - `H`, this is for the character in the string of the index `0`
+ - `e`, this is for the character in the string of the index `1`
+ - `i`, this is for the character in the string of the index `-1`
+
+#### F Strings
 F strings are Python strings that let you inject Python strings inside it. To define an F string, you just put the letter `f` before the quotation marks, and then wrap any inject Python in curly brackets `{}`.
 
 **Example**
 ```py
 print(f"This is a variable with a value of {my_variable} inside a string.")
+```
+
+#### Slicing Strings
+If you want to extract only certain ranges of characters from a string, you can slice it.
+
+So if I had the following string:
+```py
+myString = "abcdefghijklmnopqrstuvwxyx"
+```
+And I wanted the range `d-g`, I'll do this:
+```py
+myString[3:7]
+```
+If I wanted every second character between `a - n` I could do:
+```py
+myString[0:13:2]
+```
+If I just wanted `n` until the end of the string I'd do this:
+```py
+myString[13:]
+```
+If I wanted from the start of the string until `n`, I'd do this:
+```py
+myString[:13]
+```
+To reverse the string, and get from the last character until `v`, I'd do this:
+```py
+myString[::-5]
+```
+
+### Multiplying Strings
+By multiplying a string, you can have it appear many times.
+
+**Example Input:**
+```py
+myString = "abc"
+
+print(myString*7)
+```
+**Example Output:**
+```
+abcabcabcabcabcabcabc
 ```
 
 ### Checking Value Types
