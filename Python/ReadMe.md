@@ -33,6 +33,7 @@ Python is extremely versatile, it could be used for the backend of a webapp, for
       - [Accessing a List](#accessing-a-list)
       - [Editing List Items](#editing-list-items)
       - [Manipulating list items:](#manipulating-list-items)
+      - [List Functions](#list-functions)
     - [Tuple](#tuple)
     - [Sets](#sets)
     - [Dictionaries](#dictionaries)
@@ -250,7 +251,7 @@ If I wanted from the start of the string until `n`, I'd do this:
 ```py
 myString[:13]
 ```
-To reverse the string, and get from the last character until `v`, I'd do this:
+To reverse the string I'd do this:
 ```py
 myString[::-5]
 ```
@@ -337,6 +338,29 @@ And that would target `Charlie`. You can also do something with it, like print i
 print(names[2])
 ```
 
+You can also access ranges like in strings:
+
+If I wanted the range `Bob - David`, I'll do this:
+```py
+myString[1:3]
+```
+If I wanted every second item I could do:
+```py
+myString[0:4:2]
+```
+If I just wanted `Charlie` until the end of the string I'd do this:
+```py
+myString[2:]
+```
+If I wanted from the start of the string until `David`, I'd do this:
+```py
+myString[:3]
+```
+To reverse the string I'd do this:
+```py
+myString[::-1]
+```
+
 #### Editing List Items
 To edit a list item, first you target it, and then you redefine its value.
 
@@ -358,6 +382,15 @@ There are various different ways you can manipulate a list:
 | Sort         | names.sort()                    | Sorts the elements of the list in ascending order.                                                |
 | Min          | min_value = min(names)          | Returns the minimum value from the list.                                                           |
 | Max          | max_value = max(names)          | Returns the maximum value from the list.                                                           |
+
+#### List Functions
+Built-in functions you can use with lists include:
+| Function | Example                  | Description                                                                                       |
+|----------|--------------------------|---------------------------------------------------------------------------------------------------|
+| len      | `len(names)`             | Gives the number of elements.                                                                     |
+| min      | `min(names)`             | Gives the smallest element.                                                                       |
+| max      | `max(names)`             | Gives the largest element.                                                                        |
+| sum      | `sum(numbers)`           | Gives the sum of the elements. 'sum' only works for lists of numbers, other lists will get an error.|
 
 ### Tuple
 A Tuple is a lot like a list, but they are immutable. This means once a tuple is created, you can not modify any of its items.
