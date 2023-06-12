@@ -57,6 +57,7 @@ Python is extremely versatile, it could be used for the backend of a webapp, for
     - [Specifying the File Path](#specifying-the-file-path)
     - [Opening the File](#opening-the-file)
     - [Writing to the File](#writing-to-the-file)
+    - [Appending to a File](#appending-to-a-file)
     - [Closing the File](#closing-the-file)
   - [Functions](#functions)
     - [Creating Functions](#creating-functions)
@@ -625,6 +626,21 @@ Now that we've opened the file with the specified mode and saved it to a variabl
 **Example:**
 ```py
 file.write("Hello world!")
+```
+
+**Note: When writing to files, it'll overwrite anything already inside the file. To keep the existing contents, you can use Append.**
+
+### Appending to a File
+To append to a file, it's very similar to writing to the file, only the mode is set to `a` instead of `w`.
+
+**Example:**
+```py
+filePath = ("path/to/file.txt")
+file = open(filePath, "a")
+
+file.write("Some new text...")
+
+file.close()
 ```
 
 ### Closing the File
