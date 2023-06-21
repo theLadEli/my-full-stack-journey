@@ -3,17 +3,15 @@ userGuess = 0
 guessNumber = 0
 
 
-highScoreFile = open(r"C:\Users\cohen\OneDrive\Not Syncing\Old Stuff\Documentss\GitHub\my-full-stack-journey\Python\Guess the Number\highscoreScore.txt", "r+")
-highScoreNumber = highScoreFile.read()
-# highScoreText = int(highScoreText)
-
+# highScoreFile = open(r"C:\Users\cohen\OneDrive\Not Syncing\Old Stuff\Documentss\GitHub\my-full-stack-journey\Python\Guess the Number\highscoreScore.txt", "r+")
+highScoreNumber = open(r"C:\Users\cohen\OneDrive\Not Syncing\Old Stuff\Documentss\GitHub\my-full-stack-journey\Python\Guess the Number\highscoreScore.txt", "r+")
 scoreHolderFile = open(r"C:\Users\cohen\OneDrive\Not Syncing\Old Stuff\Documentss\GitHub\my-full-stack-journey\Python\Guess the Number\highscoreName.txt", "r+")
 
 
 while userGuess != correctNumber:
     userGuess = input("Guess the number, type any number between 1 - 100 here: ")
     userGuess = int(userGuess)
-    highScoreNumberInt = int(highScoreNumber)
+    highScoreNumberInt = int(highScoreNumber.read())
 
     guessNumber+=1
 
@@ -32,17 +30,16 @@ while userGuess != correctNumber:
             userName = input("🏆 New high score! Save your accomplishment by inputting your name here: ")
 
             scoreHolderFile.write(userName)
-            highScoreFile.write(str(guessNumber))
+            highScoreNumber.write(str(guessNumber))
 
-            highScoreHolder = scoreHolderFile.read()
             print(f"""
                 +------------------------------------+
                 |         Current High Score         |
                 +------------------------------------+
                 | Holder: {scoreHolderFile.read()}            |
-                | Score: {highScoreFile.read()}           |
+                | Score: {highScoreNumberInt.read()}           |
                 +------------------------------------+
             """)
 
-highScoreFile.close()
+highScoreNumberHow.close()
 scoreHolderFile.close()

@@ -1,29 +1,33 @@
-passScore = 150
-scores = []
+# passScore = 150
+# scores = []
 newScore = 0
 
-while newScore != "end":
-    newScore = input("Input the score here, type 'end' to stop: ")
+with open("marks.txt", "w") as fp:
+    while newScore != "end":
+        newScore = input("Input the score here, type 'end' to stop: ")
     
-    if newScore != "end":
-        scores.append(float(newScore))
+        if newScore != "end":
+            name = input("Name of Student: ")
+            print(f"{name}: {newScore}", file=fp)
+            # scores.append(float(newScore))
 
-avg = (sum(scores))/len(scores)
 
-if avg >= 150:
-    avg = "🎉 Pass!"
-else:
-    avg = "🛑 Fail."
+# avg = (sum(scores))/len(scores)
 
-passNumber = 0
-for score in scores:
-    if score >= 150:
-        passNumber+=1
+# if avg >= 150:
+#     avg = "🎉 Pass!"
+# else:
+#     avg = "🛑 Fail."
 
-print(f"""
-Input Stopped.
+# passNumber = 0
+# for score in scores:
+#     if score >= 150:
+#         passNumber+=1
 
-All scores: {scores}
-Average Score: {avg}
-Pass Rate: {passNumber}/{len(scores)}
-""")
+# print(f"""
+# Input Stopped.
+
+# All scores: {scores}
+# Average Score: {avg}
+# Pass Rate: {passNumber}/{len(scores)}
+# """)

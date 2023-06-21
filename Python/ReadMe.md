@@ -81,6 +81,7 @@ Python is extremely versatile, it could be used for the backend of a webapp, for
     - [Random Number](#random-number)
     - [Pickle](#pickle)
   - [RegEx](#regex)
+- [Error Handling](#error-handling)
 - [Machine Learning](#machine-learning)
 
 
@@ -531,6 +532,8 @@ else:
 ### Loops
 There are two kinds of loops, a `for` loop and a `while` loop.
 
+To stop a loop from running, you could use `break`. This can be useful for if statements inside a loop.
+
 #### For Loops
 For loops are for when you know how many times you want the loop to run.
 
@@ -875,6 +878,22 @@ Now a random number between 1-100 will be generated. Both the parameters (or ext
 > 📄 **Getting Started with Regex**
 > See the documentation of RegEx over [here](../Regex/ReadMe.md)
 > &nbsp;
+
+# Error Handling
+You can use `try` and `except` to handle errors and give a desired output. An example is below:
+```py
+try:
+  miles = float(miles)
+
+  km = miles * 1.6
+  print(f"{miles} miles is {km} Km.")
+
+except ValueError:
+  print("Not a number.")
+```
+Above we first gave it an expression to try, if it didn't work and gave us a `ValueError`, it printed **"Not a number."**. Giving the type of error (`ValueError`) in our case, is not required. Something called a **bear exception** is when you just add `except` without specifying the type of error. But then you'd struggle to find what went wrong as you'll get the same output for each.
+
+You can follow one `except` type with another, so for example I could do `except FileNotFoundError` after `except OSERROR`. Those are both two types of problems, and now I've set an output for whatever one has come up.
 
 # Machine Learning
 A machine learning program can be used for various methods, an example being a spam filter that learns your preferences over time and improves its decision based on what is and isn't spam. Many websites like Netflix use machine learning to see what content you watch and suggest others that you'll like based on data that they've collected from you.
