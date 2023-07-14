@@ -1,89 +1,93 @@
 body {
+  background: #262a42;
+  color: #d6eaf3;
+
+  font-family: "Arvo";
   text-align: center;
-  background-color: #283149;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 90vh;
+  align-items: center;
 }
 
 h1 {
-  font-size: 5rem;
-  color: #DBEDF3;
-  font-family: "Arvo", cursive;
-  text-shadow: 3px 0 #DA0463;
+  font-size: 65px;
+  text-shadow: 3px 0 #d6005a;
+}
 
+#drum-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.drum-item {
+  /* Layout */
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Design */
+  border-radius: 8px;
+  border: solid 10px #393f5b;
+  background-color: #d6eaf3;
+  cursor: pointer;
+
+  /* Typography */
+  font-size: 60px;
+  font-weight: bold;
+  color: #d6005a;
+  text-shadow: 3px 0 #d6eaf3;
+
+  /* Background */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
 footer {
-  color: #DBEDF3;
-  font-family: sans-serif;
+  font-family: "Indie Flower", sans-serif;
+  color: #d6eaf3;
+  font-size: 20px;
 }
 
-a {
-  color: #fff;
-  letter-spacing: 2px;
-  font-size: 18px;
+footer a {
+  color: #d6eaf3b6;
   text-decoration: none;
-  font-family: 'Indie Flower', cursive;
 }
 
+/* Setting the Drum Background Colours */
 .w {
-  background-image: url("images/crash.png");
-}
-
-.a {
-  background-image: url("images/kick.png");
-}
-
-.s {
   background-image: url("images/snare.png");
 }
 
-.d {
+.a {
   background-image: url("images/tom1.png");
 }
 
-.j {
-  background-image: url("images/tom2.png");
-}
-
-.k {
+.s {
   background-image: url("images/tom3.png");
 }
 
-.l {
+.d {
+  background-image: url("images/kick.png");
+}
+
+.j {
   background-image: url("images/tom4.png");
 }
 
-.set {
-  margin: 10% auto;
+.k {
+  background-image: url("images/tom2.png");
 }
 
-.game-over {
-  background-color: red;
-  opacity: 0.8;
-}
-
-.pressed {
-  box-shadow: 0 3px 4px 0 #DBEDF3;
-  opacity: 0.5;
-}
-
-.red {
-  color: red;
-}
-
-.drum {
-  outline: none;
-  border: 10px solid #404B69;
-  font-size: 5rem;
-  font-family: 'Arvo', cursive;
-  line-height: 2;
-  font-weight: 900;
-  color: #DA0463;
-  text-shadow: 3px 0 #DBEDF3;
-  border-radius: 15px;
-  display: inline-block;
-  width: 150px;
-  height: 150px;
-  text-align: center;
-  margin: 10px;
-  background-color: white;
+.l {
+  background-image: url("images/crash.png");
 }

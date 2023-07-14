@@ -1,15 +1,52 @@
-var count = 0;
-var numberofDrums = document.querySelectorAll(".drum").length;
+function playSound(){
+    var selectedButton = this.innerHTML;
 
-while (count < numberofDrums ) {
+    switch (selectedButton) {
+        case "W":
+            new Audio(`sounds/${selectedButton}-drum-sound.mp3`).play();
+            break;
 
-    //Adds an event listener to the first button, it listens for a click and then calls the onButtonClick() function - Didn't add parenthesis after the function as we don't want the function to be executed when the event listener is added
-    document.querySelectorAll(".drum")[count].addEventListener("click", onButtonClick);
+        case "a":
+            new Audio(`sounds/${selectedButton}-drum-sound.mp3`).play();
+            break;
+            
+        case "s":
+            new Audio(`sounds/${selectedButton}-drum-sound.mp3`).play();
+            break;
+                        
+        case "d":
+            new Audio(`sounds/${selectedButton}-drum-sound.mp3`).play();
+            break;
+                        
+        case "j":
+            new Audio(`sounds/${selectedButton}-drum-sound.mp3`).play();
+            break;
+                        
+        case "k":
+            new Audio(`sounds/${selectedButton}-drum-sound.mp3`).play();
+            break;
 
-    count++;
+        case "l":
+            new Audio(`sounds/${selectedButton}-drum-sound.mp3`).play();
+            break;
+            
+        default:
+            break;
+    }
 }
 
+var NumberOfDrums = document.getElementsByClassName("drum-item").length;
 
-function onButtonClick() {
-    alert("I got clicked!")
+for (let i = 0; i < NumberOfDrums; i++) {
+    document.getElementsByClassName("drum-item")[i].addEventListener("click", playSound);
 }
+
+document.addEventListener("keydown", function(){
+    let key = event.key;
+
+    if (key == "w"){
+        alert("W was pressed.")
+    } else {
+        alert("Something was pressed.")
+    }
+})

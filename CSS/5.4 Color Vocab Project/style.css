@@ -1,0 +1,60 @@
+body {
+    text-align: center;
+    background-color: #040520;
+    color: white;
+    padding: 30px;
+    font-family: "Aeonik", sans-serif;
+}
+
+#color-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    row-gap: 20px;
+    justify-content: left;
+    margin-top: 70px;
+}
+
+.color-card {
+    width: 30%;
+    height: 200px;
+    border-radius: 8px;
+}
+
+.color-title {
+    font-weight: normal;
+}
+
+
+#red {
+    background-color: rgb(149, 16, 16);
+}
+
+#blue {
+    background-color: rgb(45, 45, 206);
+}
+
+#orange {
+    background-color: rgb(167, 111, 8);
+}
+
+#green {
+    background-color: rgb(7, 79, 7);
+}
+
+#yellow {
+    background-color: rgb(133, 133, 20);
+}
+
+#last {
+    border: solid 3px rgb(189, 186, 186);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+    line-height: 30px;
+    color: rgb(189, 186, 186);
+}
