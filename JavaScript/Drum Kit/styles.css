@@ -39,6 +39,7 @@ h1 {
   border: solid 10px #393f5b;
   background-color: #d6eaf3;
   cursor: pointer;
+  transition: box-shadow 0.4s ease-in-out;
 
   /* Typography */
   font-size: 60px;
@@ -90,4 +91,10 @@ footer a {
 
 .l {
   background-image: url("images/crash.png");
+}
+
+/* Button Animation */
+.pressed {
+  opacity: 0.5;
+  box-shadow: 0 3px 4px 0 #d6eaf3;
 }
