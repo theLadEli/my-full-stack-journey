@@ -1,3 +1,11 @@
 var isButtonYellow = false;
 
-$("h1").remove;
+$("button").on("click", function(){
+
+
+    $("h1").animate ({
+        margin: 54
+    })
+}
+
+)
