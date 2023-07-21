@@ -51,10 +51,13 @@ function animatePress(currentColour) {
 
 function checkAnswer(currentLevel) {
 
-    if (nextSequence == userChosenColour) {
-        alert("Correct")
-    } else {
-        alert("Wrong.")
-    }
+    console.log(`Game Pattern: ${gamePattern}\nUser Pattern: ${userClickedPattern}`)
+    nextSequence()
+
+    // if (userClickedPattern == gamePattern) {
+    //     nextSequence()
+    // } else {
+    //     alert("Wrong.")
+    // }
 
 }
