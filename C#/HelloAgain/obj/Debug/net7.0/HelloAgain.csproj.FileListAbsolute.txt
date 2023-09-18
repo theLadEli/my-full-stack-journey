@@ -1,0 +1,14 @@
+C:\Users\cohen\OneDrive\Not Syncing\Old Stuff\Documentss\GitHub\my-full-stack-journey\C#\HelloAgain\bin\Debug\net7.0\HelloAgain.exe
+C:\Users\cohen\OneDrive\Not Syncing\Old Stuff\Documentss\GitHub\my-full-stack-journey\C#\HelloAgain\bin\Debug\net7.0\HelloAgain.deps.json
+C:\Users\cohen\OneDrive\Not Syncing\Old Stuff\Documentss\GitHub\my-full-stack-journey\C#\HelloAgain\bin\Debug\net7.0\HelloAgain.runtimeconfig.json
+C:\Users\cohen\OneDrive\Not Syncing\Old Stuff\Documentss\GitHub\my-full-stack-journey\C#\HelloAgain\bin\Debug\net7.0\HelloAgain.dll
+C:\Users\cohen\OneDrive\Not Syncing\Old Stuff\Documentss\GitHub\my-full-stack-journey\C#\HelloAgain\bin\Debug\net7.0\HelloAgain.pdb
+C:\Users\cohen\OneDrive\Not Syncing\Old Stuff\Documentss\GitHub\my-full-stack-journey\C#\HelloAgain\obj\Debug\net7.0\HelloAgain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cohen\OneDrive\Not Syncing\Old Stuff\Documentss\GitHub\my-full-stack-journey\C#\HelloAgain\obj\Debug\net7.0\HelloAgain.AssemblyInfoInputs.cache
+C:\Users\cohen\OneDrive\Not Syncing\Old Stuff\Documentss\GitHub\my-full-stack-journey\C#\HelloAgain\obj\Debug\net7.0\HelloAgain.AssemblyInfo.cs
+C:\Users\cohen\OneDrive\Not Syncing\Old Stuff\Documentss\GitHub\my-full-stack-journey\C#\HelloAgain\obj\Debug\net7.0\HelloAgain.csproj.CoreCompileInputs.cache
+C:\Users\cohen\OneDrive\Not Syncing\Old Stuff\Documentss\GitHub\my-full-stack-journey\C#\HelloAgain\obj\Debug\net7.0\HelloAgain.dll
+C:\Users\cohen\OneDrive\Not Syncing\Old Stuff\Documentss\GitHub\my-full-stack-journey\C#\HelloAgain\obj\Debug\net7.0\refint\HelloAgain.dll
+C:\Users\cohen\OneDrive\Not Syncing\Old Stuff\Documentss\GitHub\my-full-stack-journey\C#\HelloAgain\obj\Debug\net7.0\HelloAgain.pdb
+C:\Users\cohen\OneDrive\Not Syncing\Old Stuff\Documentss\GitHub\my-full-stack-journey\C#\HelloAgain\obj\Debug\net7.0\HelloAgain.genruntimeconfig.cache
+C:\Users\cohen\OneDrive\Not Syncing\Old Stuff\Documentss\GitHub\my-full-stack-journey\C#\HelloAgain\obj\Debug\net7.0\ref\HelloAgain.dll
