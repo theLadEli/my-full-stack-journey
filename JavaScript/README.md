@@ -8,36 +8,45 @@ This (specific) File just contains my notes on Basic JS!
 
 ## Table of Contents
 - [JS Basics](#js-basics)
-  * [Data Types](#data-types)
-  * [Variables:](#variables-)
-    + [Naming Variables](#naming-variables)
-    + [Advanced Variables](#advanced-variables)
-    + [Calling the variable](#calling-the-variable)
-  * [Concatenation](#concatenation)
-  * [Commenting on JS](#commenting-on-js)
-  * [Working with Numbers](#working-with-numbers)
-    + [Bidmas](#bidmas)
-    + [Rounding Down](#rounding-down)
-    + [Rounding to the Nearest Full Number](#rounding-to-the-nearest-full-number)
-    + [Elevating by the Power of a Number](#elevating-by-the-power-of-a-number)
-  * [Functions](#functions)
-    + [How to create a function:](#how-to-create-a-function-)
-    + [How to call a function](#how-to-call-a-function)
-    + [Creating Function Parameters](#creating-function-parameters)
-  * [Comparators](#comparators)
-    + [Combining Comparators](#combining-comparators)
-  * [Conditional Logic](#conditional-logic)
-    + [If Else](#if-else)
-  * [Arrays](#arrays)
-    + [Creating an Array](#creating-an-array)
-    + [Calling the Array](#calling-the-array)
-    + [Getting the Length of the Array](#getting-the-length-of-the-array)
-    + [Check if the array includes something](#check-if-the-array-includes-something)
-    + [Adding New Items on to an Array](#adding-new-items-on-to-an-array)
-    + [Removing Items from an Array](#removing-items-from-an-array)
-  * [Loops](#loops)
-    + [While Loops](#while-loops)
-    + [For Loops](#for-loops)
+  - [Table of Contents](#table-of-contents)
+  - [Data Types](#data-types)
+  - [Variables:](#variables)
+    - [Naming Variables](#naming-variables)
+    - [Advanced Variables](#advanced-variables)
+    - [Calling the variable](#calling-the-variable)
+  - [Concatenation](#concatenation)
+  - [Commenting on JS](#commenting-on-js)
+  - [Working with Numbers](#working-with-numbers)
+    - [Bidmas](#bidmas)
+    - [Rounding Down](#rounding-down)
+    - [Rounding to the Nearest Full Number](#rounding-to-the-nearest-full-number)
+    - [Elevating by the Power of a Number](#elevating-by-the-power-of-a-number)
+  - [Functions](#functions)
+    - [How to create a function:](#how-to-create-a-function)
+    - [How to call a function](#how-to-call-a-function)
+    - [Creating Function Parameters](#creating-function-parameters)
+  - [Comparators](#comparators)
+    - [Combining Comparators](#combining-comparators)
+  - [Conditional Logic](#conditional-logic)
+    - [If Else](#if-else)
+  - [Arrays](#arrays)
+    - [Creating an Array](#creating-an-array)
+    - [Calling the Array](#calling-the-array)
+    - [Getting the Length of the Array](#getting-the-length-of-the-array)
+    - [Check if the array includes something](#check-if-the-array-includes-something)
+    - [Adding New Items on to an Array](#adding-new-items-on-to-an-array)
+    - [Removing Items from an Array](#removing-items-from-an-array)
+  - [Loops](#loops)
+    - [While Loops](#while-loops)
+    - [For Loops](#for-loops)
+- [Node](#node)
+  - [REPL](#repl)
+  - [Working with Files](#working-with-files)
+    - [Writing to Files](#writing-to-files)
+    - [Reading from Files](#reading-from-files)
+- [NPM](#npm)
+  - [Setting up NPM](#setting-up-npm)
+  - [Installing NPM Packages](#installing-npm-packages)
 
 <!-- <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small> -->
 
@@ -423,3 +432,79 @@ For loops include the variable, parameters and change in value all in one. First
 for (var count = 1; count <= 100; count++){
 }
 ```
+
+# Node
+Node is a JavaScript runtime. When JavaScript was first created, it was designed to run in the browser. This meant it was impossible to use JavaScript to write any other program that is not a website.
+
+Node is also asynchronous. Typically JavaScript is synchronous, it would start from top to bottom and wait until one task has completed before moving on to the next. But Node is asynchronous and event driven. 
+
+## REPL
+Read Eval Print Loop
+
+## Working with Files
+To start, you first need to import the Node Module. This can be done by adding the following snippet at the start of your file:
+```js
+const fs = require("fs");
+```
+
+`fs` stands for File System.
+
+### Writing to Files
+Once you've added the Node Module, you can create a file by using `fs.writeFile`:
+```js
+const fs = require("fs");
+
+fs.writeFile("message.txt", "Hello from NodeJS!", (err) => {
+    if (err) throw err;
+    console.log("The file has been saved!")
+});
+```
+
+Inside `.writeFle()` I first added the file name, next the file contents, and lastly error handling. The structure looks like this:
+```
+fs.writeFile(fileName, fileContents, errorHandling)
+```
+
+### Reading from Files
+To read a file, you use the `fs.readFile` method. An example is shown below:
+```js
+const fs = require("fs");
+
+fs.readFile('./message.txt', 'utf8', (err, data) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    console.log(data);
+  });
+```
+
+The readfiles parameters consist of:`
+```
+fs.readFile(filePath, encoding to output text, error handling and actions upon reading)
+```
+
+# NPM
+The NPM is the Node Package Manager. It is a public collection of modules that people have created for Node. You can find loads of code for utilities and tools made by other people that you can use.
+
+## Setting up NPM
+NPM comes preinstalled with Node, but to use it, you first have to initialise it. To do this, open terminal and input and then walk through the guided process:
+```
+npm init
+```
+This initilisation creates the package file (`package.json`).
+
+## Installing NPM Packages
+To install a specific package, use:
+```js
+npm install <package name>
+```
+
+You can install multiple packages at a time, by just adding a space between their name:
+```js
+npm install packageOne packageTwo packageThree
+```
+
+You can also shorten `install` to just `i`. So `npm i package1` would work fine.
+
+Executing this command adds a snippet called `dependencies` to the package file, as well as downloading the packages code to a folder called `node_modules`.
