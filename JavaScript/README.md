@@ -47,6 +47,26 @@ This (specific) File just contains my notes on Basic JS!
 - [NPM](#npm)
   - [Setting up NPM](#setting-up-npm)
   - [Installing NPM Packages](#installing-npm-packages)
+- [Express](#express)
+  - [Creating an Express Server](#creating-an-express-server)
+    - [1. Creating a Directory](#1-creating-a-directory)
+    - [2. Create index.js File](#2-create-indexjs-file)
+    - [3. Initialise NPM](#3-initialise-npm)
+    - [4. Install Express](#4-install-express)
+    - [5. Write Server Application](#5-write-server-application)
+    - [6. Start Server](#6-start-server)
+  - [What is Localhost?](#what-is-localhost)
+  - [What is a Port?](#what-is-a-port)
+- [HTTP](#http)
+  - [HTTP Requests](#http-requests)
+    - [GET](#get)
+      - [Providing GET Code](#providing-get-code)
+    - [POST](#post)
+    - [PUT](#put)
+    - [PATCH](#patch)
+  - [Endpoints](#endpoints)
+  - [HTTP Response Code](#http-response-code)
+- [Postman](#postman)
 
 <!-- <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small> -->
 
@@ -508,3 +528,153 @@ npm install packageOne packageTwo packageThree
 You can also shorten `install` to just `i`. So `npm i package1` would work fine.
 
 Executing this command adds a snippet called `dependencies` to the package file, as well as downloading the packages code to a folder called `node_modules`.
+
+# Express
+
+## Creating an Express Server
+There are 6 steps to creating an express server:
+  1. Create a directory.
+  2. Create an index.js file.
+  3. Initialise NPM.
+  4. Install the Express package.
+  5. Write the Server Application in the index.js file.
+  6. Start the server.
+
+### 1. Creating a Directory
+This is a simple step. Open terminal, navigate using `cd` to the folder where you want to create the new directory inside. Inside that folder use the `mkdir` command along with the directory name.
+
+**Example**:
+```
+mkdir "Express Server"
+```
+
+### 2. Create index.js File
+`cd` into your newly created directory and use the terminal command `touch` to create a new file.
+
+**Example:**
+```
+touch index.js
+```
+
+### 3. Initialise NPM
+Typically, to initialise NPM you'd use the `npm init` command and go through the initialisation process.
+Alternatively, you could simply use `npm init -y` to just quickly initialise it without going through the setup process step by step.
+
+### 4. Install Express
+Once NPM is installed, use the terminall installation command to install express.
+
+**Example:**
+```
+npm i express
+```
+
+### 5. Write Server Application
+Back to your code editor, inside the `index.js` file we now want to write the application code.
+
+Before you do this, go to your `package.json` file and add `"type": "module"` to enable the latest version of JS`.
+
+A typical barebone application code looks something like this:
+```js
+import express from "express";
+const app = express();
+
+app.listen(3000. () => {
+  console.log("Server running on port 3000.")
+})
+```
+
+To break down the code line by line:
+  1. First we import express from the express module we just installed.
+  2. Next we create an app using this express object.
+  3. Once we created the app, we add a method to that app called `listen`. Inside, we specify two things, the port to listen for requests and secondly (next line):
+  4. The callback, this is what we want to happen upon server request. In this example, it is just a simple console log.
+
+A nice tip is to create a variable called port (`const port = 3000;`) and add that variable name wherever we use it. This way we can quickly change ports.
+
+### 6. Start Server
+Starting the server is really simple. Ensure you are inside the correct directory and use the command `node {name_of_file}`.
+
+**Example:**
+```
+node index.js
+```
+
+Now to access that file, you visit `localhost:3000`.
+
+## What is Localhost?
+Localhost is simply when we don't have an online server, so instead you host your server locally. Making your own computer the server for your backend.
+
+## What is a Port?
+A port is is the equivalent to a bunch of doors on our computer. Each door has an address. There are thousands of possible doors you can create to access your computer. In our case, when setting up our server, we specified that the door (or port) we want to be listening on, is 3000.
+
+# HTTP 
+
+## HTTP Requests
+When making HTTP requests, there are five main words you'll often come across:
+  1. GET
+  2. POST
+  3. PUT
+  4. PATCH
+  5. DELETE
+
+### GET
+GET is when we want to request a resource from a server. This can be an HTML website, a piece of text or a string of data. It is any time we are getting something from the server.
+
+If you run the server code provided before and then visited `localhost:3000`, you would have gotten this error:
+```
+cannot GET /
+```
+This is because you are trying to get something that there is no server code for.
+
+#### Providing GET Code
+If you want something for when the user tries to GET our home page, we can use the below code:
+```js
+app.get("/", (req, res) => {
+  res.send("Hello, world!");
+});
+```
+
+Breaking this code down:
+  1. The first parameter (`"/"`) is for when this should apply. So this is for whenever a user loads the servers root - in this case the home page.
+  2. In between the curly braces, we added how the server should respond to the GET request. In our case, it's just a simple "Hello world" message.
+
+Besides for just text, you can also send back fully formatted text. For example:
+```js
+  res.send("<h1>Hello, world!</h1><button>Click Me</button>");
+```
+
+### POST
+POST is very similar, except it is when we send things to the server. This could be something like form data, so I send the form contents to the server and on the server side you can do what you want with it (for example save it to your database).
+
+
+### PUT
+A PUT request is when you want to replace a resource with whatever you're sending over. So you're essentially updating it.
+
+### PATCH
+PATCH is slightly similar to PUT, it is when you patch up a resource. Although it is similar to PUT, there is a difference. PUT is usually when you replace an entire data piece, patch is when you only update/replace part of it.
+
+## Endpoints
+Endpoints is simply the URL path a user is trying to access. Earleir we setup a server response for when the user tried accessing `"/"`, that looked like this:
+```js
+app.get("/", (req, res) => {
+  res.send("Hello, world!");
+});
+```
+
+We could create and add additional endpoints:
+```js
+app.get("/about", (req, res) => {
+  res.send("About Me");
+});
+```
+## HTTP Response Code
+There are five types of response codes:
+| Type  |  Code |
+|--------|-------|
+| Informational responses | `100` - `199` |
+| Successful responses  | `200` - `299` |
+| Redirection messages  | `300` - `399` |
+| Client error responses | `400` - `499`  |
+| Server error responses | `500` - `599`  |
+
+# Postman
