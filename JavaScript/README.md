@@ -62,11 +62,14 @@ This (specific) File just contains my notes on Basic JS!
     - [GET](#get)
       - [Providing GET Code](#providing-get-code)
     - [POST](#post)
+      - [Postman](#postman)
+      - [Creating a POST Request](#creating-a-post-request)
     - [PUT](#put)
     - [PATCH](#patch)
   - [Endpoints](#endpoints)
   - [HTTP Response Code](#http-response-code)
-- [Postman](#postman)
+- [Middlewares](#middlewares)
+  - [What can Middlewares do?](#what-can-middlewares-do)
 
 <!-- <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small> -->
 
@@ -646,6 +649,18 @@ Besides for just text, you can also send back fully formatted text. For example:
 ### POST
 POST is very similar, except it is when we send things to the server. This could be something like form data, so I send the form contents to the server and on the server side you can do what you want with it (for example save it to your database).
 
+A post request is usually made from some type of HTML form. This could be a sign-up page, for example, where you need to put in your name and email.
+
+#### Postman
+If you're developing an API and you don't want to write the whole frontend while you test it, there is a tool called Postman which you can use.
+
+#### Creating a POST Request
+Creating a POST request is very similar to a GET request:
+```js
+app.post("/register", (req, res) => {
+  res.sendStatus(201)
+});
+```
 
 ### PUT
 A PUT request is when you want to replace a resource with whatever you're sending over. So you're essentially updating it.
@@ -677,4 +692,18 @@ There are five types of response codes:
 | Client error responses | `400` - `499`  |
 | Server error responses | `500` - `599`  |
 
-# Postman
+# Middlewares
+Middleware is something that sits between the raw requests coming in to a server but before it gets processed by any handlers (GET, Post etc.).
+
+## What can Middlewares do?
+There are various usecases for Middlewares, here are the main ones:
+
+  1. **Pre-processing the Request**
+    When we know the request will be going to multiple handlers, this intermediate middleware can change various parts of the request before it goes on to its final routing.
+  2. **Request Logging**
+    This can be used for logging bits of information, such as: how long it takes for the request to come through, what type of request it is, what status it is etc.
+  3. **Authentication**
+    Middleware can be used to authenticate requests before they are let through to the handlers.
+  4. **Error Handling**
+    You can process and handle any errors that may have occurred, before letting the request through to the handlers.
+
