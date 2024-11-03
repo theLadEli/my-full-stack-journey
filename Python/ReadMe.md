@@ -23,6 +23,8 @@ Python is extremely versatile, it could be used for the backend of a webapp, for
       - [Index Positions](#index-positions)
       - [F Strings](#f-strings)
       - [Slicing Strings](#slicing-strings)
+    - [Stripping Strings](#stripping-strings)
+    - [Replacing Strings](#replacing-strings)
     - [Multiplying Strings](#multiplying-strings)
     - [Checking Value Types](#checking-value-types)
     - [Converting Values](#converting-values)
@@ -129,12 +131,13 @@ Justo gravida dis morbi nullam etiam convallis massa, molestie phasellus sceleri
 ### Naming a Variable
 When naming a variable there are a few guidelines that are recommended to stick to:
  1. **Descriptive Names -** A variable that accurately describes its purpose/functionality
- 2. **Lowercase Letters -** For readability Python variables are typically written in all lowercase
- 3. **Avoid Reserved Words -** There are some words (keywords) that are to be avoided in variable naming, as these have special meaning in the language
- 4. **Keep it Concise -** It should be short to enhance readability
- 5. **Snake Casing -** Use underscores to separate words (e.g. `my_variable`)
- 6. **Start with a letter -** Variable names need to start with a letter (**A-Z**) or underscore (**_**)
- 7. **Be Consistent -** Stick to consistent naming throughout your code to avoid confusion
+ 2. **Lowercase Letters -** For readability Python variables are typically written in all lowercase except...
+ 3. **Unchanging Values -** To indicate a variable which has a value that should not be changed (such as a password), the variable name is sometimes written in full uppercase.
+ 4. **Avoid Reserved Words -** There are some words (keywords) that are to be avoided in variable naming, as these have special meaning in the language
+ 5. **Keep it Concise -** It should be short to enhance readability
+ 6. **Snake Casing -** Use underscores to separate words (e.g. `my_variable`)
+ 7. **Start with a letter -** Variable names need to start with a letter (**A-Z**) or underscore (**_**)
+ 8. **Be Consistent -** Stick to consistent naming throughout your code to avoid confusion
 
 ## Operators
 You can use mathematical operators to perform calculations in Python. Below are some of the most common ones:
@@ -257,6 +260,37 @@ To reverse the string I'd do this:
 ```py
 myString[::-5]
 ```
+
+### Stripping Strings
+You can specify characters in a string to remove.
+
+For example, with the following string:
+```py
+myString = "Hello World!"
+```
+If I want to remove the 'l' in the string, I could do:
+```py
+myString = myString.strip('!')
+```
+
+**Notes:**
+- Strip will only work to remove a character at the very start of end of the string.
+- Strip with no argument will remove spaces from the start or end of the string.
+
+### Replacing Strings
+You can replace characters in the string by specifying the character to target, and then the character to replace it with. You can also leave the replacement empty, to just remove the targeted characters.
+
+Example of replacing a letter in a string with another letter:
+```py
+myString = "Heard"
+myString = myString.replace('H', 'B')
+```
+Now `myString` would contain the string value "Beard".
+I could also run
+```py
+myString = myString.replace('H', '')
+```
+And now `myString` would contain "eard".
 
 ### Multiplying Strings
 By multiplying a string, you can have it appear many times.
