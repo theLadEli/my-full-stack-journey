@@ -85,6 +85,12 @@ Python is extremely versatile, it could be used for the backend of a webapp, for
   - [RegEx](#regex)
 - [Error Handling](#error-handling)
 - [Machine Learning](#machine-learning)
+- [Object Oriented Programming](#object-oriented-programming)
+  - [Classes](#classes)
+    - [Creating an Object (Instance)](#creating-an-object-instance)
+    - [Accessing Attributes](#accessing-attributes)
+    - [Accessing Methods](#accessing-methods)
+  - [Inheritence](#inheritence)
 
 
 ## Python Basics
@@ -933,3 +939,44 @@ You can follow one `except` type with another, so for example I could do `except
 A machine learning program can be used for various methods, an example being a spam filter that learns your preferences over time and improves its decision based on what is and isn't spam. Many websites like Netflix use machine learning to see what content you watch and suggest others that you'll like based on data that they've collected from you.
 
 SKit Learn
+
+# Object Oriented Programming
+A class is a blueprint for objects. For example, you can have a class of `Car`, this will be a blueprint for how generally Cars should behave. And an individual car instance would be an object.
+
+## Classes
+The below code created the `Car` class, it provides the accepted attributes as parameters. When creating classes, keep in mind:
+- The class name should be capitalised
+- An initialiser is a Class method that runs automatically when creating a new Object in the class
+- You define the initialiser with `__init__` instead of a function name
+- Self is a placeholder for the new objects name
+
+```py
+class Car:
+    # The initializer (constructor) method
+    def __init__(self, color, brand, speed):
+        self.color = color   # Attribute
+        self.brand = brand   # Attribute
+        self.speed = speed   # Attribute
+
+    # A method (function within a class) to describe the car
+    def describe(self):
+        print(f"This is a {self.color} {self.brand} car moving at {self.speed} mph.")
+```
+
+### Creating an Object (Instance)
+Now that we've created the `Car` class, we want to create an object within it, to do so we can within a variable call the `Car` class and provide the attribute values.
+```py
+my_car = Car("red", "Toyota", 60)
+```
+
+### Accessing Attributes
+Now that we've created a class object, if we want to call a specific object value, we can just call the object name with the atribute after a `.`:
+```py
+print(my_car.color)        # Outputs: red
+```
+
+### Accessing Methods
+my_car.describe()          # Outputs: This is a red Toyota car moving at 60 mph.
+
+## Inheritence
+Usually when defining a class, you do not add the round brackets. But when you want to inherit values from another class, you add the parent class within brackets of the newly defined child class.
