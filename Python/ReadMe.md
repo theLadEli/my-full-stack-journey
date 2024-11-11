@@ -172,6 +172,7 @@ You can use mathematical operators to perform calculations in Python. Below are 
 | and      | Logical AND operator           | True and False     | False  |
 | or       | Logical OR operator            | True or False      | True   |
 | not      | Logical NOT operator           | not True           | False  |
+
 Logical operators can be used for example to see if something equals something `or` something else. 
 
 ## Assignment Operators
@@ -186,6 +187,7 @@ Logical operators can be used for example to see if something equals something `
 | **=      | Exponentiate and assign  | x **= 2 (where x = 2)          | x = 4    |
 | and=     | Logical AND and assign   | x and= False (where x = True)  | x = False|
 | or=      | Logical OR and assign    | x or= True (where x = False)   | x = True |
+
 These assignment operators allow you to perform an operation and update the value of a variable in a single step, making your code more concise and readable.
 
 # Working with Data Types
@@ -222,7 +224,7 @@ stringIndex = 'Hello, my name is Eli'
 print(stringIndex[0], stringIndex[1], stringIndex[-1])
 ```
 
-***Example Output:**
+**Example Output:**
 ```py
 H e i
 ```
@@ -510,8 +512,6 @@ To remove a key-value, I could do the following:
 ```py
 del about_eli['occupation']
 ```
-
-## Manipulating Collections
 
 
 # Python Input & Output
