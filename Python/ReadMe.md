@@ -3,75 +3,82 @@ Python is extremely versatile, it could be used for the backend of a webapp, for
 
 ## Table of Contents:
 > 💡 **Note:** This may be out of date and have some broken links as this page is being continuously updated.
-- [Python](#python)
-  - [Table of Contents:](#table-of-contents)
-  - [Python Basics](#python-basics)
-    - [Expressions](#expressions)
-    - [Indentation](#indentation)
-    - [Scope](#scope)
-  - [Variables](#variables)
-    - [Creating a Variable](#creating-a-variable)
-    - [Naming a Variable](#naming-a-variable)
-  - [Operators](#operators)
-    - [Basic Operators](#basic-operators)
-    - [Logical Operators](#logical-operators)
-    - [Assignment Operators](#assignment-operators)
-  - [Working with Data Types](#working-with-data-types)
-    - [The Different Data Types](#the-different-data-types)
-    - [Strings](#strings)
-      - [String Formatting](#string-formatting)
-      - [Index Positions](#index-positions)
-      - [F Strings](#f-strings)
-      - [Slicing Strings](#slicing-strings)
-    - [Stripping Strings](#stripping-strings)
-    - [Replacing Strings](#replacing-strings)
-    - [Multiplying Strings](#multiplying-strings)
-    - [Checking Value Types](#checking-value-types)
-    - [Converting Values](#converting-values)
-    - [Getting Data Type Options](#getting-data-type-options)
-  - [Collections](#collections)
-    - [Lists](#lists)
-      - [Creating a List](#creating-a-list)
-      - [Accessing a List](#accessing-a-list)
-      - [Editing List Items](#editing-list-items)
-      - [Manipulating list items:](#manipulating-list-items)
-      - [List Functions](#list-functions)
-    - [Tuple](#tuple)
-    - [Sets](#sets)
-    - [Dictionaries](#dictionaries)
-      - [Defining Dictionaries:](#defining-dictionaries)
-      - [Accessing Values](#accessing-values)
-      - [Modifying Values](#modifying-values)
-      - [Adding Key-Value Pairs](#adding-key-value-pairs)
-      - [Deleting Key-Value Pairs](#deleting-key-value-pairs)
-    - [Manipulating Collections](#manipulating-collections)
-  - [Python Input \& Output](#python-input--output)
-    - [Logging](#logging)
-    - [Input](#input)
-  - [Decision Structures and Iterations](#decision-structures-and-iterations)
-    - [Assignment and Comparison](#assignment-and-comparison)
-    - [If Statements](#if-statements)
-    - [Loops](#loops)
-      - [For Loops](#for-loops)
-      - [While Loops](#while-loops)
-    - [With](#with)
-  - [Writing to Files](#writing-to-files)
-    - [Specifying the File Path](#specifying-the-file-path)
-    - [Opening the File](#opening-the-file)
-    - [Writing to the File](#writing-to-the-file)
-    - [Appending to a File](#appending-to-a-file)
-    - [Closing the File](#closing-the-file)
-  - [Functions](#functions)
-    - [Creating Functions](#creating-functions)
-    - [Calling Functions](#calling-functions)
-    - [Parameters](#parameters)
-      - [Creating a Parameter](#creating-a-parameter)
-      - [Default Parameters / Variadic Functions](#default-parameters--variadic-functions)
-        - [Args](#args)
-        - [Kwargs](#kwargs)
-    - [Returning Data](#returning-data)
-      - [Docstrings](#docstrings)
-        - [How to create a Docstring](#how-to-create-a-docstring)
+ 
+<!-- no toc -->
+- [Python Basics](#python-basics)
+  - [Expressions](#expressions)
+  - [Indentation](#indentation)
+  - [Scope](#scope)
+- [Variables](#variables)
+  - [Creating a Variable](#creating-a-variable)
+  - [Naming a Variable](#naming-a-variable)
+- [Operators](#operators)
+  - [Basic Operators](#basic-operators)
+  - [Logical Operators](#logical-operators)
+  - [Assignment Operators](#assignment-operators)
+- [Working with Data Types](#working-with-data-types)
+  - [The Different Data Types](#the-different-data-types)
+  - [Strings](#strings)
+    - [String Formatting](#string-formatting)
+    - [Index Positions](#index-positions)
+    - [F Strings](#f-strings)
+    - [Slicing Strings](#slicing-strings)
+  - [Stripping Strings](#stripping-strings)
+  - [Replacing Strings](#replacing-strings)
+  - [Multiplying Strings](#multiplying-strings)
+  - [Checking Value Types](#checking-value-types)
+  - [Converting Values](#converting-values)
+  - [Getting Data Type Options](#getting-data-type-options)
+- [Collections](#collections)
+  - [Lists](#lists)
+    - [Creating a List](#creating-a-list)
+    - [Accessing a List](#accessing-a-list)
+    - [Editing List Items](#editing-list-items)
+    - [Manipulating list items:](#manipulating-list-items)
+    - [List Functions](#list-functions)
+  - [Tuple](#tuple)
+  - [Sets](#sets)
+  - [Dictionaries](#dictionaries)
+    - [Defining Dictionaries:](#defining-dictionaries)
+    - [Accessing Values](#accessing-values)
+    - [Modifying Values](#modifying-values)
+    - [Adding Key-Value Pairs](#adding-key-value-pairs)
+    - [Deleting Key-Value Pairs](#deleting-key-value-pairs)
+  - [Manipulating Collections](#manipulating-collections)
+- [Python Input \& Output](#python-input--output)
+  - [Logging](#logging)
+  - [Input](#input)
+- [Decision Structures and Iterations](#decision-structures-and-iterations)
+  - [Assignment and Comparison](#assignment-and-comparison)
+  - [If Statements](#if-statements)
+  - [Loops](#loops)
+    - [For Loops](#for-loops)
+    - [While Loops](#while-loops)
+  - [With](#with)
+- [Writing to Files](#writing-to-files)
+  - [Specifying the File Path](#specifying-the-file-path)
+  - [Opening the File](#opening-the-file)
+  - [Writing to the File](#writing-to-the-file)
+  - [Appending to a File](#appending-to-a-file)
+  - [Closing the File](#closing-the-file)
+- [Functions](#functions)
+  - [Creating Functions](#creating-functions)
+  - [Calling Functions](#calling-functions)
+  - [Parameters](#parameters)
+    - [Creating a Parameter](#creating-a-parameter)
+    - [Default Parameters / Variadic Functions](#default-parameters--variadic-functions)
+      - [Args](#args)
+      - [Kwargs](#kwargs)
+  - [Returning Data](#returning-data)
+    - [Docstrings](#docstrings)
+      - [How to create a Docstring](#how-to-create-a-docstring)
+- [Object Oriented Programming](#object-oriented-programming)
+  - [Terminolagy](#terminolagy)
+  - [Classes](#classes)
+    - [Creating an Object (Instance)](#creating-an-object-instance)
+    - [Accessing Attributes](#accessing-attributes)
+    - [Accessing Methods](#accessing-methods)
+  - [Inheritence](#inheritence)
 - [Python Modules](#python-modules)
   - [Why Use Modules?](#why-use-modules)
   - [Creating a Module](#creating-a-module)
@@ -85,20 +92,14 @@ Python is extremely versatile, it could be used for the backend of a webapp, for
   - [RegEx](#regex)
 - [Error Handling](#error-handling)
 - [Machine Learning](#machine-learning)
-- [Object Oriented Programming](#object-oriented-programming)
-  - [Classes](#classes)
-    - [Creating an Object (Instance)](#creating-an-object-instance)
-    - [Accessing Attributes](#accessing-attributes)
-    - [Accessing Methods](#accessing-methods)
-  - [Inheritence](#inheritence)
 
 
-## Python Basics
+# Python Basics
 
-### Expressions
+## Expressions
 Expressions are combinations of values, variables and operators that produce results. It can be calculations, comparisons or even functions.
 
-### Indentation
+## Indentation
 In Python indentation is necessary. For example, if I had an if statement like this:
 ```py
 if 2 == 2:
@@ -106,12 +107,12 @@ if 2 == 2:
 ```
 Only if the print is indented would it be included in the if statement.
 
-### Scope
+## Scope
 > *To be Added*
 
-## Variables
+# Variables
 
-### Creating a Variable
+## Creating a Variable
 In python a variable is defined simply by giving it a name and then a value.
 For example:
 ```py
@@ -134,7 +135,7 @@ Justo gravida dis morbi nullam etiam convallis massa, molestie phasellus sceleri
 """
 ```
 
-### Naming a Variable
+## Naming a Variable
 When naming a variable there are a few guidelines that are recommended to stick to:
  1. **Descriptive Names -** A variable that accurately describes its purpose/functionality
  2. **Lowercase Letters -** For readability Python variables are typically written in all lowercase except...
@@ -145,10 +146,10 @@ When naming a variable there are a few guidelines that are recommended to stick 
  7. **Start with a letter -** Variable names need to start with a letter (**A-Z**) or underscore (**_**)
  8. **Be Consistent -** Stick to consistent naming throughout your code to avoid confusion
 
-## Operators
+# Operators
 You can use mathematical operators to perform calculations in Python. Below are some of the most common ones:
 
-### Basic Operators
+## Basic Operators
 | Operator | Description                 | Example                       | Output    |
 |----------|-----------------------------|-------------------------------|-----------|
 | +        | Addition                    | 2 + 3                         | 5         |
@@ -165,7 +166,7 @@ You can use mathematical operators to perform calculations in Python. Below are 
 | >=       | Greater than or equal to     | 2 >= 3                        | False     |
 | <=       | Less than or equal to        | 2 <= 3                        | True      |
 
-### Logical Operators
+## Logical Operators
 | Operator | Description                    | Example            | Output |
 |----------|--------------------------------|--------------------|--------|
 | and      | Logical AND operator           | True and False     | False  |
@@ -173,7 +174,7 @@ You can use mathematical operators to perform calculations in Python. Below are 
 | not      | Logical NOT operator           | not True           | False  |
 Logical operators can be used for example to see if something equals something `or` something else. 
 
-### Assignment Operators
+## Assignment Operators
 | Operator | Description              | Example                        | Output   |
 |----------|--------------------------|--------------------------------|----------|
 | +=       | Add and assign           | x += 2 (where x = 3)           | x = 5    |
@@ -187,9 +188,9 @@ Logical operators can be used for example to see if something equals something `
 | or=      | Logical OR and assign    | x or= True (where x = False)   | x = True |
 These assignment operators allow you to perform an operation and update the value of a variable in a single step, making your code more concise and readable.
 
-## Working with Data Types
+# Working with Data Types
 
-### The Different Data Types
+## The Different Data Types
 There are many different data types in Python, listed below are the most common ones along with what they do and examples of them:
 | Data Type | Example | Description |
 |-----------|---------|-------------|
@@ -202,16 +203,16 @@ There are many different data types in Python, listed below are the most common 
 | `set`     | `{1, 2, 3}` | Represents an unordered collection of unique elements. |
 | `None`    | `None`  | Represents the absence of a value or the null value. |
 
-### Strings
+## Strings
  - To make a string in python, you surround the text with double or single quotes.
  - To make a multiline string, you surround the text with triple quotes
 
-#### String Formatting
+### String Formatting
 Like most languages, to make a new line, you use `\n`.
 To add a tab (indent), you use `\t`.
 For characters not available on the keyboard, you may need to use the unicode value.
 
-#### Index Positions
+### Index Positions
 Each character in a string has an index, like in arrays. The index of the first character is `0`, the last  character is `-1`.
 
 **Example Input:**
@@ -231,7 +232,7 @@ Here's the different outputs:
  - `e`, this is for the character in the string of the index `1`
  - `i`, this is for the character in the string of the index `-1`
 
-#### F Strings
+### F Strings
 F strings are Python strings that let you inject Python strings inside it. To define an F string, you just put the letter `f` before the quotation marks, and then wrap any inject Python in curly brackets `{}`.
 
 **Example**
@@ -239,7 +240,7 @@ F strings are Python strings that let you inject Python strings inside it. To de
 print(f"This is a variable with a value of {my_variable} inside a string.")
 ```
 
-#### Slicing Strings
+### Slicing Strings
 If you want to extract only certain ranges of characters from a string, you can slice it.
 
 So if I had the following string:
@@ -267,7 +268,7 @@ To reverse the string I'd do this:
 myString[::-5]
 ```
 
-### Stripping Strings
+## Stripping Strings
 You can specify characters in a string to remove.
 
 For example, with the following string:
@@ -283,7 +284,7 @@ myString = myString.strip('!')
 - Strip will only work to remove a character at the very start of end of the string.
 - Strip with no argument will remove spaces from the start or end of the string.
 
-### Replacing Strings
+## Replacing Strings
 You can replace characters in the string by specifying the character to target, and then the character to replace it with. You can also leave the replacement empty, to just remove the targeted characters.
 
 Example of replacing a letter in a string with another letter:
@@ -298,7 +299,7 @@ myString = myString.replace('H', '')
 ```
 And now `myString` would contain "eard".
 
-### Multiplying Strings
+## Multiplying Strings
 By multiplying a string, you can have it appear many times.
 
 **Example Input:**
@@ -312,21 +313,21 @@ print(myString*7)
 abcabcabcabcabcabcabc
 ```
 
-### Checking Value Types
+## Checking Value Types
 To check the type of a value, you can use the `type` function.
 **Example:**
 ```py
 print(type(user_guess))
 ```
 
-### Converting Values
+## Converting Values
 If I wanted to convert a string to an integer, I could do the following:
 ```py
 user_guess = input("Enter your guess:")
 user_guess = int(user_guess)
 ```
 
-### Getting Data Type Options
+## Getting Data Type Options
 In Python you can use `dir()` to check all the available option with a data type.
 
 **Example Input:**
@@ -354,15 +355,15 @@ print(myString.upper())
 HELLO, MY NAME IS ELI
 ```
 
-## Collections
+# Collections
 Collections is a way to store and organise lots of pieces of data. There are a few different types of collections:
 
-### Lists
+## Lists
 A list is an ordered sequence of values.
  - You are able to add, remove or edit items in the list after it's created.
  - You're able to have different data types in the list, so one item can be an integer, another a string etc.
 
-#### Creating a List
+### Creating a List
 To create a list, first give it a name. Then when you give it a value, wrap it in square brackets and separate each list item with a comma.
 
 **Example:**
@@ -370,7 +371,7 @@ To create a list, first give it a name. Then when you give it a value, wrap it i
 names = ["Alice", "Bob", "Charlie", "David", "Eli"]
 ```
 
-#### Accessing a List
+### Accessing a List
 To access an item of a list, you just target its index. Like this:
 ```py
 names[2]
@@ -403,7 +404,7 @@ To reverse the string I'd do this:
 myString[::-1]
 ```
 
-#### Editing List Items
+### Editing List Items
 To edit a list item, first you target it, and then you redefine its value.
 
 **Example:**
@@ -411,7 +412,7 @@ To edit a list item, first you target it, and then you redefine its value.
 names[2] = Chris
 ```
 
-#### Manipulating list items:
+### Manipulating list items:
 There are various different ways you can manipulate a list:
 | Operation    | Example                           | Description                                                                                       |
 |--------------|-----------------------------------|---------------------------------------------------------------------------------------------------|
@@ -425,7 +426,7 @@ There are various different ways you can manipulate a list:
 | Min          | min_value = min(names)          | Returns the minimum value from the list.                                                           |
 | Max          | max_value = max(names)          | Returns the maximum value from the list.                                                           |
 
-#### List Functions
+### List Functions
 Built-in functions you can use with lists include:
 | Function | Example                  | Description                                                                                       |
 |----------|--------------------------|---------------------------------------------------------------------------------------------------|
@@ -434,7 +435,7 @@ Built-in functions you can use with lists include:
 | max      | `max(names)`             | Gives the largest element.                                                                        |
 | sum      | `sum(numbers)`           | Gives the sum of the elements. 'sum' only works for lists of numbers, other lists will get an error.|
 
-### Tuple
+## Tuple
 A Tuple is a lot like a list, but they are immutable. This means once a tuple is created, you can not modify any of its items.
 
 To create a tuple, it's the same as `lists`, only with round brackets instead of square.
@@ -445,7 +446,7 @@ names = ("Alice", "Bob", "Charlie", "David", "Eli")
 ```
 Now this tuple is fixed and can not be modified at a later point.
 
-### Sets
+## Sets
 Set is an unordered collection of unique elements.
  - Sets do not allow duplicate elements, adding a duplicate will not have any affect
  - As sets are unordered, each time you print it, it will have a different order. This means you can not target a specific item index
@@ -467,10 +468,10 @@ print(names)
 ```
 As you can see, it only output David once. You also might have noticed the change in order, this is because sets do not have an order.
 
-### Dictionaries
+## Dictionaries
 Dictionaries are laid out pretty differently to lists. It is a collection of key-value pairs, so it gives names to each item in it.
 
-#### Defining Dictionaries:
+### Defining Dictionaries:
 ```py
 about_eli = {
     'name': 'Eli',
@@ -480,7 +481,7 @@ about_eli = {
 ```
 The Keys are the names like `name`, `age` and `city`. The values are what comes after the name, like `Eli`, `17` and `London`.
 
-#### Accessing Values
+### Accessing Values
 If I wanted to print my age, I could do this:
 ```py
 print(about_eli['age'])
@@ -490,7 +491,7 @@ I could also save it as a variable like this:
 my_age = about_eli['age']
 ```
 
-#### Modifying Values
+### Modifying Values
 With dictionaries you are able to modify values. To do this, you first target the key you want to change, and then specify its new value.
 
 **Example:**
@@ -498,30 +499,30 @@ With dictionaries you are able to modify values. To do this, you first target th
 about_eli['age'] = 17
 ```
 
-#### Adding Key-Value Pairs
+### Adding Key-Value Pairs
 If I wanted to add a new key value pair, I could do the following:
 ```py
 about_eli['occupation'] = 'Web Developer'
 ```
 
-#### Deleting Key-Value Pairs
+### Deleting Key-Value Pairs
 To remove a key-value, I could do the following:
 ```py
 del about_eli['occupation']
 ```
 
-### Manipulating Collections
+## Manipulating Collections
 
 
-## Python Input & Output
+# Python Input & Output
 
-### Logging
+## Logging
 To log something to console you use the `print` command. For example:
 ```py
 print("Hello World")
 ```
 
-### Input
+## Input
 If you want to give the user an option to input something, you could use the `input()` feature. So if I wanted the variable `name` to be the users name, I could do:
 ```py
 name = input("")
@@ -537,15 +538,15 @@ A user input is always received as a string input, even if you just input a numb
 To convert from an integer to a string, check out this section [here](#converting-values)
 
 
-## Decision Structures and Iterations
+# Decision Structures and Iterations
 
-### Assignment and Comparison
+## Assignment and Comparison
 There is a difference between using `==` and `=`. They have different functionality and usecases.
 
  - `=` is used to assign a value
  - `==` is used to check if it is equal
 
-### If Statements
+## If Statements
 If statements are laid out like so:
 ```py
 correct_answer = 2
@@ -569,12 +570,12 @@ else:
     print("x is greater than 5")
 ```
 
-### Loops
+## Loops
 There are two kinds of loops, a `for` loop and a `while` loop.
 
 To stop a loop from running, you could use `break`. This can be useful for if statements inside a loop.
 
-#### For Loops
+### For Loops
 For loops are for when you know how many times you want the loop to run.
 
 So if I have an array of fruits:
@@ -587,7 +588,7 @@ for fruit in fruits:
     print("Hello!")
 ```
 
-#### While Loops
+### While Loops
 While loops are for when you don't know how many times to loop.
 
 If I had a variable with the value of 0, like this:
@@ -620,13 +621,13 @@ while count < 10:
         print("Count is now at 10!")
 ```
 
-### With
+## With
 > 👉 *To be Added*
 
-## Writing to Files
+# Writing to Files
 Writing to files is a very useful feature, this way you can save users info locally. This could be high scores, settings and much more!
 
-### Specifying the File Path
+## Specifying the File Path
 To create the file you want to write to, you first need to specify its path and then when you open it it'll be created **if it does not already exist**.
 
 **Example:**
@@ -639,7 +640,7 @@ file = open(file_path, "w")
 file.close()
 ```
 
-### Opening the File
+## Opening the File
 To open a file you use the `open()` function. There are many different modes you can open a file with, here they are:
 
 | Mode | Description                                           |
@@ -663,7 +664,7 @@ file = open(file_path, "wt")
 ```
 So now it's opening in text mode and write mode, so it overwrites an existing file.
 
-### Writing to the File
+## Writing to the File
 Now that we've opened the file with the specified mode and saved it to a variable called `file`, you can write to it by adding `.write()` after it.
 
 **Example:**
@@ -673,7 +674,7 @@ file.write("Hello world!")
 
 **Note: When writing to files, it'll overwrite anything already inside the file. To keep the existing contents, you can use Append.**
 
-### Appending to a File
+## Appending to a File
 To append to a file, it's very similar to writing to the file, only the mode is set to `a` instead of `w`.
 
 **Example:**
@@ -686,23 +687,23 @@ file.write("Some new text...")
 file.close()
 ```
 
-### Closing the File
+## Closing the File
 After you've written to the file, you'd want to close it. If you don't close it, the changes will not be written to the file until the entire program has been stopped. Which is not ideal and takes up unnecessary memory space. To do this, just add the below after you've written to the file:
 ```py
 file.close()
 ```
 
-## Functions
+# Functions
 Functions are reusable blocks of code to perform a specific set of tasks.
 
-### Creating Functions
+## Creating Functions
 To define a function you use the `def` keyword, to say you're defining a function. Then you give it a name.
 ```py
 def my_function():
   print("Hello!")
 ```
 
-### Calling Functions
+## Calling Functions
 Once a function is created you can call it as many times as is needed. This way instead of rewriting blocks of code, time and time again, you can just wrap it in a function and call it at a later time.
 
 So if we want to call the function we just created, we'd do this:
@@ -710,10 +711,10 @@ So if we want to call the function we just created, we'd do this:
 my_function()
 ```
 
-### Parameters
+## Parameters
 Functions could have a parameter, these are like placeholders or variables that let you pass values into the function when it is called.
 
-#### Creating a Parameter
+### Creating a Parameter
 So if we wanted to pass a name into the function we created, so it gives a custom greeting to a person, we can use a parameter like this:
 ```py
 def my_function(name):
@@ -728,7 +729,7 @@ and it'd `print` this:
 Hello Eli
 ```
 
-#### Default Parameters / Variadic Functions
+### Default Parameters / Variadic Functions
 You can also assign parameters default values, for example:
 ```py
 def greet(name, message="Hello"):
@@ -754,7 +755,7 @@ Jack, Hello!
 Eli, Hi!
 ```
 
-##### Args
+#### Args
 By using `args` in a function parameter you can accept any number of parameters, and it'll be stored as a tuple.
 To use `args` you just add an asterisk before the parameter name like this:
 ```py
@@ -767,7 +768,7 @@ print(calculate_sum(4, 5, 6, 7, 8))  # Output: 30
 ```
 In the above snippet, the function `calculate_sum` will accept any number of arguments and store them in the `numbers` parameter as a tuple. We could then easily just sum all the `numbers` arguments.
 
-##### Kwargs
+#### Kwargs
 Similar to `args`, using `kwargs` lets you accept any number of keyword arguments but instead of storing them as tuples it stores them as dictionaries.
 Here's an example:
 ```py
@@ -799,7 +800,7 @@ user_info(name="Eli", age=16, city="London")
 ```
 When calling the agreement I can now create however many dictionary key-values as I want. And using the functions `for each` it'll print every key-value.
 
-### Returning Data
+## Returning Data
 In functions, the `return` statement is used to specify the functions output.
  - When a `return` statement is used, the function gets terminated. So any code after the `return` within the function is not executed
 
@@ -821,13 +822,13 @@ Hello Eli
 The benefit of using `return` rather then `print` as in the previous example, is you have the ability to capture the `return`, you can store it to a variable or use it as an input for other computations. But with a `print`, there is no way to capture the output and re-use it.
 
 
-#### Docstrings
+### Docstrings
 Docstrings is a place to provide documentation of a function.
  - It's placed as the first statement in the function.
  - It provides information about the purpose, usage and behaviour of a function.
  - Many IDE's offer built in support for Docstrings, this includes auto-completion, typing hints, usage examples when hovering over the function etc.
 
-##### How to create a Docstring
+#### How to create a Docstring
 Docstrings are wrapped in tipple quotes (""") and placed at the start of functions.
 
 Here's an example of how a Docstring should be structured:
@@ -849,6 +850,67 @@ In the above example, it's structured like this:
  1. First it has a brief one-line summary of what the function does
  2. Next, introduced with `Arguments`, it explains what each of the parameters are for
  3. Lastly it says what you should expect back from the function
+
+# Object Oriented Programming
+A class is a blueprint for objects. For example, you can have a class of `Car`, this will be a blueprint for how generally Cars should behave. And an individual car instance would be an object.
+
+## Terminolagy
+- **OOP:** Object Oriented Programming
+- **Objects:** Same as Instances
+- **Attributes:** Object characteristics
+- **Parameters:** Arguments (what we pass when creating an instance of the class)
+- **Methods:** A function when it's a part of a class
+- **Dundermethod:**
+- **Inheritence:**
+- **Polymorphism:**
+- **Encapsulation:**
+
+## Classes
+The below code created the `Car` class, it provides the accepted attributes as parameters. When creating classes, keep in mind:
+- The class name should be capitalised
+- An initialiser is a Class method that runs automatically when creating a new Object in the class
+- You define the initialiser with `__init__` instead of a function name
+- Self is a placeholder for the new objects name
+
+```py
+class Car:
+    # The initializer (constructor) method
+    def __init__(self, color, brand, speed):
+        self.color = color   # Attribute
+        self.brand = brand   # Attribute
+        self.speed = speed   # Attribute
+
+    # A method (function within a class) to describe the car
+    def describe(self):
+        print(f"This is a {self.color} {self.brand} car moving at {self.speed} mph.")
+```
+
+You can also provide default values with attributes, but the default value needs to be the last attribute specified:
+```py
+class Car:
+    def __init__(self, color, brand = 'McLaren', speed = 225):
+        self.color = color
+        self.brand = brand
+        self.speed = speed
+```
+
+### Creating an Object (Instance)
+Now that we've created the `Car` class, we want to create an object within it, to do so we can within a variable call the `Car` class and provide the attribute values.
+```py
+my_car = Car("red", "Toyota", 60)
+```
+
+### Accessing Attributes
+Now that we've created a class object, if we want to call a specific object value, we can just call the object name with the atribute after a `.`:
+```py
+print(my_car.color)        # Outputs: red
+```
+
+### Accessing Methods
+my_car.describe()          # Outputs: This is a red Toyota car moving at 60 mph.
+
+## Inheritence
+Usually when defining a class, you do not add the round brackets. But when you want to inherit values from another class, you add the parent class within brackets of the newly defined child class.
 
 # Python Modules
 Modules is essentially just code someone has written that you're able to use.
@@ -939,44 +1001,3 @@ You can follow one `except` type with another, so for example I could do `except
 A machine learning program can be used for various methods, an example being a spam filter that learns your preferences over time and improves its decision based on what is and isn't spam. Many websites like Netflix use machine learning to see what content you watch and suggest others that you'll like based on data that they've collected from you.
 
 SKit Learn
-
-# Object Oriented Programming
-A class is a blueprint for objects. For example, you can have a class of `Car`, this will be a blueprint for how generally Cars should behave. And an individual car instance would be an object.
-
-## Classes
-The below code created the `Car` class, it provides the accepted attributes as parameters. When creating classes, keep in mind:
-- The class name should be capitalised
-- An initialiser is a Class method that runs automatically when creating a new Object in the class
-- You define the initialiser with `__init__` instead of a function name
-- Self is a placeholder for the new objects name
-
-```py
-class Car:
-    # The initializer (constructor) method
-    def __init__(self, color, brand, speed):
-        self.color = color   # Attribute
-        self.brand = brand   # Attribute
-        self.speed = speed   # Attribute
-
-    # A method (function within a class) to describe the car
-    def describe(self):
-        print(f"This is a {self.color} {self.brand} car moving at {self.speed} mph.")
-```
-
-### Creating an Object (Instance)
-Now that we've created the `Car` class, we want to create an object within it, to do so we can within a variable call the `Car` class and provide the attribute values.
-```py
-my_car = Car("red", "Toyota", 60)
-```
-
-### Accessing Attributes
-Now that we've created a class object, if we want to call a specific object value, we can just call the object name with the atribute after a `.`:
-```py
-print(my_car.color)        # Outputs: red
-```
-
-### Accessing Methods
-my_car.describe()          # Outputs: This is a red Toyota car moving at 60 mph.
-
-## Inheritence
-Usually when defining a class, you do not add the round brackets. But when you want to inherit values from another class, you add the parent class within brackets of the newly defined child class.
