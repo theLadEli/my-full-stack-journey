@@ -1001,3 +1001,6 @@ You can follow one `except` type with another, so for example I could do `except
 A machine learning program can be used for various methods, an example being a spam filter that learns your preferences over time and improves its decision based on what is and isn't spam. Many websites like Netflix use machine learning to see what content you watch and suggest others that you'll like based on data that they've collected from you.
 
 SKit Learn
+
+# API
+API stands for Application Programming Interface. It allows you to exhange data from one device to another.

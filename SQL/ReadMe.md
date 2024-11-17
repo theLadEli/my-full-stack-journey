@@ -13,6 +13,7 @@ SQL Stands for:
     - [DML](#dml)
   - [Basic Commands](#basic-commands)
     - [Data Types](#data-types)
+  - [Constraints](#constraints)
     - [Creating a Table](#creating-a-table)
     - [Inserting Data into a Table](#inserting-data-into-a-table)
   - [Queries](#queries)
@@ -42,11 +43,13 @@ There are many different flavors of SQL, like mySQL, postgreSQL and Oracle. They
 
 I'll be using https://www.db-fiddle.com/ for this documentation.
 
-Unlike Python, `""` and `''` ase not interchangable. **When in doubt, use single quotes!**
+Unlike Python, `""` and `''` are not interchangeable. **When in doubt, use single quotes!**
 
 Statements always end in `;`.
 
 ## Relational Databases
+**RDBM** is a **R**elational **D**atabase **M**anagement **S**ystem.
+
 > 👉 *To be Added*
 
 ## Commands
@@ -81,6 +84,14 @@ DML stands for Data manipulation language. This will be used for:
 | Binary Data            | BLOB          |              | Binary Large Object for storing binary data.              | `image BLOB`                      |
 | Enumerated Values      | ENUM          | Values       | Defines a set of allowed values for a column.             | `status ENUM('active', 'inactive')` |
 
+## Constraints
+Conditions defined to ensure the data going into a field is a certain type. Like a condition.
+
+**Examples:**
+- NOT NULL: has to be valid data.
+- DEFAULT: sets a default value.
+- UNIQUE: it can not be a repeated number.
+- PRIMARY KEY: An identifier for the row that is both unique as well as not null.
 
 ### Creating a Table
 In order to create a table you use `CREATE TABLE`, followed by the table name and for the columns, you wrap them in parenthesis.
